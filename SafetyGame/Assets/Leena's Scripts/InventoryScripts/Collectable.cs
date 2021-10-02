@@ -1,30 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Collectable : MonoBehaviour, ICollectable
 {
-    public Sprite _Image = null;
-
+    public Sprite image = null;
     public Sprite Image
     {
         get
         {
-            return _Image;
+            return image;
         }
     }
 
-    public void OnPickUp()
+    public void Collect()
     {
         gameObject.SetActive(false);
     }
 
-    public void ToDrop()
+    public void Drop()
     {
         RaycastHit hit = new RaycastHit();
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hit, 10000000))
+        if (Physics.Raycast(ray, out hit, 50000))
         {
             gameObject.SetActive(true);
             gameObject.transform.position = hit.point;

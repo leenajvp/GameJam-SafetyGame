@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] private Image[] slotImages = null;
+    [SerializeField] private Image[] itemSlots = null;
     private int slots;
     private List<ICollectable> collectedObjects = new List<ICollectable>();
 
@@ -14,24 +14,20 @@ public class Inventory : MonoBehaviour
 
     public void Start()
     {
-        slots = slotImages.Length;
+        slots = itemSlots.Length;
     }
 
     public void AddItem(ICollectable item)
     {
+        
         if (collectedObjects.Count < slots)
         {
-            Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-            if (collider.enabled)
-            {
-                collider.enabled = false;
-                collectedObjects.Add(item);
-                item.OnPickUp();
+            collectedObjects.Add(item);
+            item.Collect();
 
-                if (ItemAdded != null)
-                {
-                    ItemAdded(this, new InventoryEventArgs(item));
-                }
+            if (ItemAdded != null)
+            {
+                ItemAdded(this, new InventoryEventArgs(item));
             }
         }
     }
@@ -41,14 +37,7 @@ public class Inventory : MonoBehaviour
         if (collectedObjects.Contains(item))
         {
             collectedObjects.Remove(item);
-            item.ToDrop();
-
-            Collider collider = (item as MonoBehaviour).GetComponent<Collider>();
-
-            if (collider != null)
-            {
-                collider.enabled = true;
-            }
+            item.Drop();
 
             if (ItemRemoved != null)
             {

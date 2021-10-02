@@ -11,7 +11,7 @@ public class TempMovement : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
     }
 
-    public void Update()
+    private void Update()
     {
         if (Input.GetKey(KeyCode.W))
         {
@@ -33,22 +33,21 @@ public class TempMovement : MonoBehaviour
             transform.Rotate(0.0f, rotationSpeed * Time.deltaTime, 0.0f);
         }
 
-        Collect();
+        CollectItem();
     }
 
-    public void Collect()
+    public void CollectItem()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 0.5f);
 
         foreach (var col in colliders)
         {
-            ICollectable pickableObject = col.GetComponent<ICollectable>();
+            ICollectable collectableItem = col.GetComponent<ICollectable>();
 
-            if (pickableObject != null)
+            if (collectableItem != null)
             {
-                inventory.AddItem(pickableObject);
+                inventory.AddItem(collectableItem);
             }
         }
     }
-
 }

@@ -1,22 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour
 {
-    public Inventory inventory;
+    private Inventory inventory;
 
     private void Awake()
     {
         inventory = FindObjectOfType<Inventory>();
-        inventory.ItemAdded += InventoryScript_ItemAdded;
-        inventory.ItemRemoved += InventoryScript_Removed;
+        inventory.ItemAdded += ItemBeenAdded;
+        inventory.ItemRemoved += ItemBeenRemoved;
     }
 
-    private void InventoryScript_ItemAdded(object sender, InventoryEventArgs e)
+    private void ItemBeenAdded(object sender, InventoryEventArgs e)
     {
         Transform inventoryPanel = transform.Find("InventoryPanel");
+
         foreach (Transform slot in inventoryPanel)
         {
             Transform imageTransform = slot.GetChild(0);
@@ -34,9 +33,10 @@ public class UIScript : MonoBehaviour
         }
     }
 
-    private void InventoryScript_Removed(object sender, InventoryEventArgs e)
+    private void ItemBeenRemoved(object sender, InventoryEventArgs e)
     {
         Transform inventoryPanel = transform.Find("InventoryPanel");
+
         foreach (Transform slot in inventoryPanel)
         {
             Transform imageTransform = slot.GetChild(0);

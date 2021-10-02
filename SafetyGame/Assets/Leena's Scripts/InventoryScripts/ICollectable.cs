@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public interface ICollectable
 {
     Sprite Image { get; }
-    void OnPickUp();
-    void ToDrop();
+    void Collect();
+    void Drop();
 }
 
 public class InventoryEventArgs : EventArgs
