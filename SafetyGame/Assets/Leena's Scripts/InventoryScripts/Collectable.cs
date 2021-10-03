@@ -6,7 +6,7 @@ public class Collectable : MonoBehaviour, ICollectable
     public bool isAvailable { get; set; }
     public Sprite image = null;
 
-    private void Start()
+    public void Start()
     {
         isAvailable = true;
     }
@@ -26,6 +26,7 @@ public class Collectable : MonoBehaviour, ICollectable
 
     public void Drop()
     {
+
         RaycastHit hit = new RaycastHit();
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -49,5 +50,10 @@ public class Collectable : MonoBehaviour, ICollectable
             }
         }
     }
+
+    //public void Drop()
+    //{
+
+    //}
 }
 

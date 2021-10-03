@@ -5,6 +5,7 @@ public class TempMovement : MonoBehaviour
     public float speed = 10f;
     public float rotationSpeed = 50f;
     public Inventory inventory;
+    public bool helmetCollected;
 
     private void Awake()
     {
@@ -43,11 +44,22 @@ public class TempMovement : MonoBehaviour
         foreach (var col in colliders)
         {
             ICollectable collectableItem = col.GetComponent<ICollectable>();
-            
 
             if (collectableItem != null && collectableItem.isAvailable == true)
             {
                 inventory.AddItem(collectableItem);
+                GameObject collectedItem = col.gameObject;
+                Helmet helmet = collectedItem.GetComponent<Helmet>();
+
+                if (helmet != null)
+                {
+                    helmetCollected = true;
+                }
+
+                else
+                {
+                    return;
+                }
             }
         }
     }
