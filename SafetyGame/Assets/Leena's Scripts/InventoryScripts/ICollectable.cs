@@ -4,6 +4,7 @@ using UnityEngine;
 public interface ICollectable
 {
     Sprite Image { get; }
+    bool isAvailable { get; set; }
     void Collect();
     void Drop();
 }

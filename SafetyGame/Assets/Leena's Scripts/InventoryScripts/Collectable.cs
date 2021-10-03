@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Collectable : MonoBehaviour, ICollectable
 {
+    public bool isAvailable { get; set; }
     public Sprite image = null;
+
+    private void Start()
+    {
+        isAvailable = true;
+    }
+
     public Sprite Image
     {
         get
@@ -25,6 +33,21 @@ public class Collectable : MonoBehaviour, ICollectable
         {
             gameObject.SetActive(true);
             gameObject.transform.position = hit.point;
+
+            isAvailable = false;
+
+            var hitDropSpot = hit.collider.GetComponent<IDropSpot>();
+
+            if (hitDropSpot != null)
+            {
+                GameObject selectedDropSpot;
+                selectedDropSpot = hit.collider.gameObject;
+                gameObject.SetActive(true);
+                gameObject.transform.position = selectedDropSpot.transform.position;
+
+                isAvailable = false;
+            }
         }
     }
 }
+
