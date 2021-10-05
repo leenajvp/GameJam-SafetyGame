@@ -49,7 +49,7 @@ public class move : MonoBehaviour
                         {
                             float km = col.transform.position.z - transform.position.z;
                             if (km != 0)
-                                transform.position = transform.position + transform.right * km * Time.deltaTime;
+                                transform.position = transform.position - transform.right * km * Time.deltaTime;
                         }
                         else
                         {
@@ -61,9 +61,18 @@ public class move : MonoBehaviour
                             }
                             else
                             {
-                                float km = col.transform.position.x - transform.position.x;
-                                if (km != 0)
-                                    transform.position = transform.position + transform.right * km * Time.deltaTime;
+                                if (transform.rotation.eulerAngles.y == 180)
+                                {
+                                    float km = col.transform.position.x - transform.position.x;
+                                    if (km != 0)
+                                        transform.position = transform.position - transform.right * km * Time.deltaTime;
+                                }
+                                else
+                                {
+                                    float km = col.transform.position.x - transform.position.x;
+                                    if (km != 0)
+                                        transform.position = transform.position + transform.right * km * Time.deltaTime;
+                                }
                             }
                         }
                     }
