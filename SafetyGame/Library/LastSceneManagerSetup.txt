@@ -1,9 +1,13 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/LeenaTesting.unity
 =======
 - path: Assets/Scenes/Level1.unity
 >>>>>>> Brian
+=======
+- path: Assets/Scenes/StephanieTesting.unity
+>>>>>>> Stephanie
   isLoaded: 1
   isActive: 1
   isSubScene: 0

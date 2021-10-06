@@ -24,11 +24,18 @@ MonoBehaviour:
     y: 43
     width: 1920
     height: 997
+<<<<<<< HEAD
 >>>>>>> Brian
   m_ShowMode: 4
   m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
+=======
+  m_ShowMode: 4
+  m_Title: Scene
+  m_RootView: {fileID: 9}
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> Stephanie
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -47,12 +54,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 522
     y: 0
     width: 466
     height: 302
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    x: 916
+    y: 0
+    width: 584
+    height: 499
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> Stephanie
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -75,8 +91,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 201
     height: 302
+=======
+    width: 305
+    height: 499
+>>>>>>> Stephanie
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -109,12 +130,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 988
     height: 302
   m_MinSize: {x: 505, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
   controlID: 69
+=======
+    width: 1500
+    height: 499
+  m_MinSize: {x: 505, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
+  vertical: 0
+  controlID: 20
+>>>>>>> Stephanie
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +160,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 201
     y: 0
     width: 321
     height: 302
+=======
+    x: 305
+    y: 0
+    width: 611
+    height: 499
+>>>>>>> Stephanie
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -157,9 +194,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 302
     width: 988
     height: 271
+=======
+    y: 499
+    width: 1500
+    height: 448
+>>>>>>> Stephanie
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
@@ -190,12 +233,21 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 988
     height: 573
   m_MinSize: {x: 505, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
   controlID: 68
+=======
+    width: 1500
+    height: 947
+  m_MinSize: {x: 505, y: 492}
+  m_MaxSize: {x: 12005, y: 14042}
+  vertical: 1
+  controlID: 19
+>>>>>>> Stephanie
 --- !u!114 &8
 =======
     width: 1920
@@ -253,9 +305,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1265
     height: 623
   m_MinSize: {x: 875, y: 300}
+=======
+    width: 1920
+    height: 997
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> Stephanie
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -278,7 +336,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1265
+=======
+    width: 1920
+>>>>>>> Stephanie
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -320,12 +382,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 603
     width: 1265
 =======
     y: 977
     width: 1920
 >>>>>>> Brian
+=======
+    y: 977
+    width: 1920
+>>>>>>> Stephanie
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -349,12 +416,21 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
     y: 30
+<<<<<<< HEAD
     width: 1265
     height: 573
   m_MinSize: {x: 782, y: 492}
   m_MaxSize: {x: 16007, y: 14042}
   vertical: 0
   controlID: 133
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 781, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
+  vertical: 0
+  controlID: 18
+>>>>>>> Stephanie
 --- !u!114 &13
 =======
     y: 0
@@ -381,12 +457,21 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 988
     y: 0
     width: 277
     height: 573
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+    x: 1500
+    y: 0
+    width: 420
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> Stephanie
   m_ActualView: {fileID: 19}
 =======
     x: 958
@@ -422,10 +507,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 529.3334
     y: 80
     width: 464
     height: 281
+=======
+    x: 916
+    y: 73
+    width: 582
+    height: 478
+>>>>>>> Stephanie
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -448,17 +540,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -1280
-    m_HBaseRangeMax: 1280
-    m_VBaseRangeMin: -720
-    m_VBaseRangeMax: 720
+    m_HBaseRangeMin: -1920
+    m_HBaseRangeMax: 1920
+    m_VBaseRangeMin: -1080
+    m_VBaseRangeMax: 1080
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -469,16 +561,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 464
       height: 260
     m_Scale: {x: 0.18055555, y: 0.18055555}
     m_Translation: {x: 232, y: 130}
+=======
+      width: 582
+      height: 457
+    m_Scale: {x: 0.28858465, y: 0.28858465}
+    m_Translation: {x: 297.53754, y: 222.89987}
+>>>>>>> Stephanie
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -1284.9231
       y: -720
       width: 2569.8462
@@ -486,6 +586,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.18055555
   m_LastWindowPixelSize: {x: 696, y: 421.5}
+=======
+      x: -1031.0234
+      y: -772.3899
+      width: 2016.7393
+      height: 1583.5908
+    m_MinimalGUI: 1
+  m_defaultScale: 0.1515625
+  m_LastWindowPixelSize: {x: 582, y: 478}
+>>>>>>> Stephanie
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -577,10 +686,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 208.66667
     y: 80
     width: 319
     height: 281
+=======
+    x: 305
+    y: 73
+    width: 609
+    height: 478
+>>>>>>> Stephanie
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: f01e987957d336e489e6e4b0093d2f2e
@@ -593,9 +709,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -211.28, y: 10.119999, z: -8.9867115}
     speed: 2
     m_Value: {x: -211.28, y: 10.119999, z: -8.9867115}
+=======
+    m_Target: {x: -1746.5187, y: 1019.82715, z: 1.9974976}
+    speed: 2
+    m_Value: {x: -1746.5187, y: 1019.82715, z: 1.9974976}
+>>>>>>> Stephanie
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -634,7 +756,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -642,6 +764,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.13993189, y: -0.008911429, z: 0.0012594734, w: 0.9901229}
     speed: 2
     m_Value: {x: 0.13993151, y: -0.008911406, z: 0.0012594701, w: 0.9901203}
@@ -649,13 +772,22 @@ MonoBehaviour:
     m_Target: 3.8322518
     speed: 2
     m_Value: 3.8322518
+=======
+    m_Target: {x: -0.1498515, y: -0.802525, z: 0.22696526, w: -0.5313066}
+    speed: 2
+    m_Value: {x: -0.15645353, y: -0.7975851, z: 0.23464347, w: -0.5332192}
+  m_Size:
+    m_Target: 551.9774
+    speed: 2
+    m_Value: 577.9868
+>>>>>>> Stephanie
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 0.9453
+    m_SpeedNormalized: 0.47
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -666,8 +798,8 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
-  m_LastSceneViewOrtho: 0
+  m_LastSceneViewRotation: {x: -0.22301699, y: 0.1436007, z: -0.033163723, w: -0.96372616}
+  m_LastSceneViewOrtho: 1
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
@@ -789,6 +921,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 7.3333335
     y: 80
     width: 200
@@ -799,6 +932,12 @@ MonoBehaviour:
     width: 254
     height: 926
 >>>>>>> Brian
+=======
+    x: 0
+    y: 73
+    width: 304
+    height: 478
+>>>>>>> Stephanie
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -806,10 +945,14 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 36fbffff
 =======
       m_ExpandedIDs: 38c7feff7cc7feffc0c7feffc6d6feff9ee3feffa212ffff3044fffff663ffff3a64ffff6880ffffd88cffffe28cffff30a0ffff26c0ffff30c3ffff12d0ffff7ad0ffff66e7fffff8faffff
 >>>>>>> Brian
+=======
+      m_ExpandedIDs: 8cd3ffffacd3ffffc0d3ffff12d6ffffc4daffff
+>>>>>>> Stephanie
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -891,6 +1034,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 7.3333335
     y: 382
     width: 987
@@ -901,6 +1045,12 @@ MonoBehaviour:
     width: 273
     height: 926
 >>>>>>> Brian
+=======
+    x: 0
+    y: 572
+    width: 1499
+    height: 427
+>>>>>>> Stephanie
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -932,12 +1082,17 @@ MonoBehaviour:
 =======
   - Assets/Prefabs/scaffolding-prefabs
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\Brian Rodriguez\Desktop\uni-files\Game-jam\GameJam-SafetyGame\SafetyGame
 >>>>>>> Brian
+=======
+  m_LastProjectPath: C:\Users\steph.JUNASTE.000\Documents\GitHub\GameJam-SafetyGame\SafetyGame
+>>>>>>> Stephanie
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 24420000
     m_LastClickedID: 16932
@@ -947,6 +1102,11 @@ MonoBehaviour:
     m_LastClickedID: 20174
     m_ExpandedIDs: 00000000704d0000764d00007e4d000000ca9a3b
 >>>>>>> Brian
+=======
+    m_SelectedIDs: 445c0000
+    m_LastClickedID: 23620
+    m_ExpandedIDs: 00000000325c0000445c000000ca9a3b
+>>>>>>> Stephanie
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -975,10 +1135,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000000e420000
 =======
     m_ExpandedIDs: 00000000704d0000
 >>>>>>> Brian
+=======
+    m_ExpandedIDs: 00000000325c0000
+>>>>>>> Stephanie
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1006,7 +1170,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: 
+=======
+    m_ExpandedInstanceIDs: 0000000082010100aa720000b44d000040c3000008770000cecd0000684502003e7500005e830100ea57010048750000f0a40000b6ef0000d05d00007a5d0000
+>>>>>>> Stephanie
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1049,6 +1217,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
     m_Text: Game
     m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
@@ -1059,6 +1228,17 @@ MonoBehaviour:
     y: 80
     width: 275
     height: 552
+=======
+    m_Text: Inspector
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1500
+    y: 73
+    width: 419
+    height: 926
+>>>>>>> Stephanie
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -1164,10 +1344,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 73
     width: 957
     height: 579
+=======
+    x: 1500
+    y: 73
+    width: 419
+    height: 926
+>>>>>>> Stephanie
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: ec80cdb5c5fb1464d98ac3319e39784f
