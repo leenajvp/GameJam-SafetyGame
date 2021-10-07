@@ -9,6 +9,9 @@ public class move : MonoBehaviour
     [SerializeField]
     float acceleration = 2.0f;
     float speed;
+    [SerializeField]
+    float rotspeed = 60.0f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + transform.forward * 5 * Time.deltaTime;
+        transform.position = transform.position + transform.forward * 2 * Time.deltaTime;
         Collider[] colliders = Physics.OverlapSphere(transform.position, 1.001f);
         if (colliders.Length == 1)
         {
@@ -37,12 +40,56 @@ public class move : MonoBehaviour
                 {
                     if (transform.rotation.eulerAngles.y != col.transform.rotation.eulerAngles.y)
                     {
-                        transform.Rotate(0, (col.transform.rotation.eulerAngles.y) - transform.rotation.eulerAngles.y, 0);
+                        if (col.transform.rotation.eulerAngles.y + 1 < transform.rotation.eulerAngles.y)
+                        {
+                                rotspeed = -60;
+                        }
+                        if (col.transform.rotation.eulerAngles.y == 270 && transform.rotation.eulerAngles.y == 0)
+                            rotspeed = -60;
+                        if (col.transform.rotation.eulerAngles.y == 90 && transform.rotation.eulerAngles.y == 0)
+                            rotspeed = 60;
+                        if (col.transform.rotation.eulerAngles.y == 0 && transform.rotation.eulerAngles.y <= 90)
+                            rotspeed = -60;
+                        if (col.transform.rotation.eulerAngles.y == 0 && transform.rotation.eulerAngles.y >= 270)
+                            rotspeed = 60;
+                        transform.Rotate(0, rotspeed* Time.deltaTime, 0);
+                        Debug.Log(rotspeed);
+                        if (rotspeed > 0)
+                        {
+                            Debug.Log("right");
+                            if (col.transform.rotation.eulerAngles.y == 0)
+                            {
+                                if (transform.rotation.eulerAngles.y < 30)
+                                    transform.Rotate(0, (col.transform.rotation.eulerAngles.y - transform.rotation.eulerAngles.y), 0);
+
+                            }
+                            else
+                            {
+                                if (transform.rotation.eulerAngles.y > col.transform.rotation.eulerAngles.y)
+                                {
+                                    transform.Rotate(0, (col.transform.rotation.eulerAngles.y - transform.rotation.eulerAngles.y), 0);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Debug.Log("left");
+                            if (col.transform.rotation.eulerAngles.y == 0)
+                            {
+                                if (transform.rotation.eulerAngles.y > 300)
+                                    transform.Rotate(0, (col.transform.rotation.eulerAngles.y - transform.rotation.eulerAngles.y), 0);
+                            }
+                            if (transform.rotation.eulerAngles.y < col.transform.rotation.eulerAngles.y)
+                            {
+                                transform.Rotate(0, (col.transform.rotation.eulerAngles.y - transform.rotation.eulerAngles.y), 0);
+                            }
+                        }
                     }
                     if (transform.rotation.eulerAngles.x != col.transform.rotation.eulerAngles.x)
                     {
                         transform.Rotate((col.transform.rotation.eulerAngles.x - transform.rotation.eulerAngles.x), 0, 0);
                     }
+
                     if (transform.rotation.eulerAngles.y == col.transform.rotation.eulerAngles.y)
                     {
                         if (transform.rotation.eulerAngles.y == 90)
