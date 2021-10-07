@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 
-public class Helmet : Collectable, ICollectable
+public class Helmet : Collectable
 {
     public override bool isAvailable { get; set; }
 
     private TempMovement player;
+    private HelmetSpot helmet;
 
     public override void Start()
     {
         isAvailable = true;
         player = FindObjectOfType<TempMovement>();
+        helmet = FindObjectOfType<HelmetSpot>();
     }
 
     public override void Drop()
@@ -27,7 +29,7 @@ public class Helmet : Collectable, ICollectable
             {
                 if (hitDropSpot != null && hitDropSpot.isPlaced == false)
                 {
-                    hitDropSpot.isPlaced = true;
+                    helmet.isPlaced = true;
                     Destroy(gameObject);
                 }
 
