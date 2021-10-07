@@ -1,16 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class Collectable : MonoBehaviour, ICollectable
 {
-    public bool isAvailable { get; set; }
+    public virtual bool isAvailable { get; set; }
     public Sprite image = null;
-
-    public void Start()
-    {
-        isAvailable = true;
-    }
-
     public Sprite Image
     {
         get
@@ -19,12 +12,17 @@ public class Collectable : MonoBehaviour, ICollectable
         }
     }
 
-    public void Collect()
+    public virtual void Start()
+    {
+        isAvailable = true;
+    }
+
+    public virtual void Collect()
     {
         gameObject.SetActive(false);
     }
 
-    public void Drop()
+    public virtual void Drop()
     {
 
         RaycastHit hit = new RaycastHit();
@@ -34,7 +32,6 @@ public class Collectable : MonoBehaviour, ICollectable
         {
             gameObject.SetActive(true);
             gameObject.transform.position = hit.point;
-
             isAvailable = false;
 
             var hitDropSpot = hit.collider.GetComponent<IDropSpot>();
@@ -50,10 +47,5 @@ public class Collectable : MonoBehaviour, ICollectable
             }
         }
     }
-
-    //public void Drop()
-    //{
-
-    //}
 }
 

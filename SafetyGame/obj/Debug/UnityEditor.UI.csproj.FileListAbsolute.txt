@@ -1,0 +1,2 @@
+E:\FinalYear\GameJam\GameJam-SafetyGame\SafetyGame\obj\Debug\UnityEditor.UI.csproj.AssemblyReference.cache
+E:\FinalYear\GameJam\GameJam-SafetyGame\SafetyGame\obj\Debug\UnityEditor.UI.csproj.CoreCompileInputs.cache

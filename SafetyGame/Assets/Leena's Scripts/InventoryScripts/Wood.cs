@@ -1,10 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-
-public class Wood : Collectable
+﻿public class Wood : Collectable
 {
-
+    //Add logic if needed
 }

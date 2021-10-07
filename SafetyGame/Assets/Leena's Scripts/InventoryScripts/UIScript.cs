@@ -4,18 +4,19 @@ using UnityEngine.UI;
 public class UIScript : MonoBehaviour
 {
     private Inventory inventory;
+    private Transform inventoryPanel;
 
     private void Awake()
     {
         inventory = FindObjectOfType<Inventory>();
-        inventory.ItemAdded += ItemBeenAdded;
-        inventory.ItemRemoved += ItemBeenRemoved;
+        inventoryPanel = inventory.transform;
+
+        inventory.ItemAdded += Inventory_ItemBeenAdded;
+        inventory.ItemRemoved += Inventory_ItemBeenRemoved;
     }
 
-    private void ItemBeenAdded(object sender, InventoryEventArgs e)
+    private void Inventory_ItemBeenAdded(object sender, InventoryEventArgs e)
     {
-        Transform inventoryPanel = transform.Find("InventoryPanel");
-
         foreach (Transform slot in inventoryPanel)
         {
             Transform imageTransform = slot.GetChild(0);
@@ -33,10 +34,8 @@ public class UIScript : MonoBehaviour
         }
     }
 
-    private void ItemBeenRemoved(object sender, InventoryEventArgs e)
+    private void Inventory_ItemBeenRemoved(object sender, InventoryEventArgs e)
     {
-        Transform inventoryPanel = transform.Find("InventoryPanel");
-
         foreach (Transform slot in inventoryPanel)
         {
             Transform imageTransform = slot.GetChild(0);
@@ -48,7 +47,7 @@ public class UIScript : MonoBehaviour
                 image.enabled = false;
                 image.sprite = null;
                 itemDragHandler.Item = null;
-
+                Destroy(slot.gameObject);
                 break;
             }
         }

@@ -1,25 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HelmetSpot : MonoBehaviour, IPlayerDropSpot
 {
-    public bool isPlaced { get; set; }
     private MeshRenderer mesh;
+    public bool isPlaced { get; set; }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         mesh = GetComponent<MeshRenderer>();
         isPlaced = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (isPlaced == true)
         {
             mesh.enabled = true;
+        }
+
+        else
+        {
+            mesh.enabled = false;
         }
     }
 }
