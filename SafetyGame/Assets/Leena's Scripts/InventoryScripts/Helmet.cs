@@ -4,13 +4,13 @@ public class Helmet : Collectable
 {
     public override bool isAvailable { get; set; }
 
-    private TempMovement player;
+    private PlayerCollection player;
     private HelmetSpot helmet;
 
     public override void Start()
     {
         isAvailable = true;
-        player = FindObjectOfType<TempMovement>();
+        player = FindObjectOfType<PlayerCollection>();
         helmet = FindObjectOfType<HelmetSpot>();
     }
 
@@ -27,9 +27,10 @@ public class Helmet : Collectable
 
             if (player.helmetCollected == false)
             {
-                if (hitDropSpot != null && hitDropSpot.isPlaced == false)
+                if (hitDropSpot != null && player.helmetCollected == false)
                 {
                     helmet.isPlaced = true;
+                    player.helmetCollected = true;
                     Destroy(gameObject);
                 }
 

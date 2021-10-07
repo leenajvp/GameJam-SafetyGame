@@ -2,12 +2,12 @@
 
 public class HelmetSpot : MonoBehaviour, IPlayerDropSpot
 {
-    private MeshRenderer mesh;
+    private SkinnedMeshRenderer mesh;
     public bool isPlaced { get; set; }
 
     private void Start()
     {
-        mesh = GetComponent<MeshRenderer>();
+        mesh = GetComponent<SkinnedMeshRenderer>();
         isPlaced = false;
     }
 

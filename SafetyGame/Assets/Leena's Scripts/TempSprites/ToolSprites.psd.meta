@@ -4,13 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 8945712175485939522
-    second: Bucket
+    second: bucket
   - first:
       213: 5825846447505380196
     second: helmet
   - first:
       213: -5542012587845981595
     second: wood
+  - first:
+      213: 8949023119948451833
+    second: edges
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -136,10 +139,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bucket
+      name: bucket
       rect:
         serializedVersion: 2
-        x: 28
+        x: 41
         y: 2882
         width: 564
         height: 581
@@ -194,6 +197,27 @@ TextureImporter:
       bones: []
       spriteID: 56a62b80ae0d613b0800000000000000
       internalID: -5542012587845981595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: edges
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1825
+        width: 2413
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff09471d11513c70800000000000000
+      internalID: 8949023119948451833
       vertices: []
       indices: 
       edges: []

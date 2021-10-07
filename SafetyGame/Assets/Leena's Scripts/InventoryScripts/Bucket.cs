@@ -6,13 +6,13 @@ public class Bucket : Collectable
 {
     public override bool isAvailable { get; set; }
 
-    private TempMovement player;
+    private PlayerCollection player;
     private BucketSpot bucket;
 
     public override void Start()
     {
         isAvailable = true;
-        player = FindObjectOfType<TempMovement>();
+        player = FindObjectOfType<PlayerCollection>();
         bucket = FindObjectOfType<BucketSpot>();
     }
 
@@ -29,8 +29,9 @@ public class Bucket : Collectable
 
             if (player.helmetCollected == false)
             {
-                if (hitDropSpot != null && hitDropSpot.isPlaced == false)
+                if (hitDropSpot != null && player.helmetCollected == false)
                 {
+                    player.helmetCollected = true;
                     bucket.isPlaced = true;
                     Destroy(gameObject);
                 }

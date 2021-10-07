@@ -48,6 +48,7 @@ public class UIScript : MonoBehaviour
                 image.sprite = null;
                 itemDragHandler.Item = null;
                 Destroy(slot.gameObject);
+
                 break;
             }
         }
