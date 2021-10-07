@@ -7,11 +7,13 @@ public class move : MonoBehaviour
     [SerializeField]
     float topspeed = 5.0f;
     [SerializeField]
+    float charspeed = 5.0f;
+    [SerializeField]
     float acceleration = 2.0f;
     float speed;
     [SerializeField]
     float rotspeed = 60.0f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + transform.forward * 2 * Time.deltaTime;
+        transform.position = transform.position + transform.forward * charspeed * Time.deltaTime;
         Collider[] colliders = Physics.OverlapSphere(transform.position, 1.001f);
         if (colliders.Length == 1)
         {
@@ -42,7 +44,7 @@ public class move : MonoBehaviour
                     {
                         if (col.transform.rotation.eulerAngles.y + 1 < transform.rotation.eulerAngles.y)
                         {
-                                rotspeed = -60;
+                            rotspeed = -60;
                         }
                         if (col.transform.rotation.eulerAngles.y == 270 && transform.rotation.eulerAngles.y == 0)
                             rotspeed = -60;
@@ -52,7 +54,7 @@ public class move : MonoBehaviour
                             rotspeed = -60;
                         if (col.transform.rotation.eulerAngles.y == 0 && transform.rotation.eulerAngles.y >= 270)
                             rotspeed = 60;
-                        transform.Rotate(0, rotspeed* Time.deltaTime, 0);
+                        transform.Rotate(0, rotspeed * Time.deltaTime, 0);
                         Debug.Log(rotspeed);
                         if (rotspeed > 0)
                         {
