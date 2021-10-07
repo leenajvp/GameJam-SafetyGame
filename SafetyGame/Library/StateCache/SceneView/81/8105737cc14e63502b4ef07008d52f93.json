@@ -1,1 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-211.27999877929688,"y":10.119998931884766,"z":-8.986711502075196},"rotation":{"x":0.13993188738822938,"y":-0.008911428973078728,"z":0.0012594733852893115,"w":0.99012291431427},"size":3.832251787185669,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-214.8234100341797,"y":15.562317848205567,"z":-50.828102111816409},"rotation":{"x":0.16641069948673249,"y":-0.18951067328453065,"z":0.032608192414045337,"w":0.9671293497085571},"size":10.202235221862793,"orthographic":true}
+>>>>>>> Brian
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":-1746.5186767578125,"y":1019.8271484375,"z":1.99749755859375},"rotation":{"x":-0.1498515009880066,"y":-0.802524983882904,"z":0.2269652634859085,"w":-0.5313066244125366},"size":551.9774169921875,"orthographic":true}
+>>>>>>> Stephanie
