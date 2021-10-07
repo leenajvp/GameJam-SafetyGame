@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class DropHandler : MonoBehaviour, IDropHandler
 {
-    public Inventory inventory;
+    private Inventory inventory;
 
     private void Awake()
     {
