@@ -1,10 +1,17 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     public ICollectable Item { get; set; }
+    private Image image;
+
+    private void Start()
+    {
+        image = GetComponent<Image>();
+        image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
+    }
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -31,7 +38,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
             var hitDropSpot = hit.collider.GetComponent<IDropSpot>();
             var hitPlayerDropSpot = hit.collider.GetComponent<IPlayerDropSpot>();
 
-            if (hitDropSpot != null || hitPlayerDropSpot !=null)
+            if (hitDropSpot != null || hitPlayerDropSpot != null)
             {
                 image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
             }

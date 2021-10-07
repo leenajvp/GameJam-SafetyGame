@@ -1,35 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Helmet : MonoBehaviour, ICollectable
+public class Helmet : Collectable
 {
-    public bool isAvailable { get; set; }
-    public Sprite image = null;
+    public override bool isAvailable { get; set; }
 
     private TempMovement player;
+    private HelmetSpot helmet;
 
-    public void Start()
+    public override void Start()
     {
         isAvailable = true;
         player = FindObjectOfType<TempMovement>();
+        helmet = FindObjectOfType<HelmetSpot>();
     }
 
-    public Sprite Image
+    public override void Drop()
     {
-        get
-        {
-            return image;
-        }
-    }
+        base.Drop();
 
-    public void Collect()
-    {
-        gameObject.SetActive(false);
-    }
-
-    public void Drop()
-    {
         RaycastHit hit = new RaycastHit();
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -37,26 +25,18 @@ public class Helmet : MonoBehaviour, ICollectable
         {
             var hitDropSpot = hit.collider.GetComponent<IPlayerDropSpot>();
 
-            if (hitDropSpot != null)
+            if (player.helmetCollected == false)
             {
-                GameObject selectedDropSpot;
-                selectedDropSpot = hit.collider.gameObject;
-                HelmetSpot helmetSpot = selectedDropSpot.GetComponent<HelmetSpot>();
-                
-                if (helmetSpot != null)
+                if (hitDropSpot != null && hitDropSpot.isPlaced == false)
                 {
-                    helmetSpot.isPlaced = true;
-                    player.helmetCollected = false;
+                    helmet.isPlaced = true;
+                    Destroy(gameObject);
                 }
-            }
 
-            else
-            {
-                gameObject.SetActive(true);
-                gameObject.transform.position = hit.point;
-
-                isAvailable = true;
-                player.helmetCollected = false;
+                else
+                {
+                    return;
+                }
             }
         }
     }

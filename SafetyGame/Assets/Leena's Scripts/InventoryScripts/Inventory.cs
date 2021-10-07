@@ -5,30 +5,27 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] private Image[] itemSlots = null;
-    private int slots;
+    public Image slotPrefab;
     private List<ICollectable> collectedObjects = new List<ICollectable>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
     public event EventHandler<InventoryEventArgs> ItemRemoved;
 
-    public void Start()
+    private void Start()
     {
-        slots = itemSlots.Length;
+        
     }
 
     public void AddItem(ICollectable item)
     {
-        
-        if (collectedObjects.Count < slots)
-        {
-            collectedObjects.Add(item);
-            item.Collect();
+        Image slot = Instantiate(slotPrefab);
+        slot.transform.SetParent(this.transform, false);
+        collectedObjects.Add(item);
+        item.Collect();
 
-            if (ItemAdded != null)
-            {
-                ItemAdded(this, new InventoryEventArgs(item));
-            }
+        if (ItemAdded != null)
+        {
+            ItemAdded(this, new InventoryEventArgs(item));
         }
     }
 
@@ -38,6 +35,7 @@ public class Inventory : MonoBehaviour
         {
             collectedObjects.Remove(item);
             item.Drop();
+            Debug.Log(collectedObjects.Count.ToString());
 
             if (ItemRemoved != null)
             {
