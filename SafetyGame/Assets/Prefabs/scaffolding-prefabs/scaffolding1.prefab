@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 9153130379181501192}
   - component: {fileID: 3530631044045909550}
   m_Layer: 0
-  m_Name: 3height plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1076,7 +1076,7 @@ GameObject:
   - component: {fileID: 3037005351294687313}
   - component: {fileID: 2573707662025241421}
   m_Layer: 0
-  m_Name: bottom plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2582,7 +2582,7 @@ GameObject:
   - component: {fileID: 1782667972914803807}
   - component: {fileID: 4500211684459736208}
   m_Layer: 0
-  m_Name: 2height plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3083,7 +3083,7 @@ GameObject:
   - component: {fileID: 3866361037709294316}
   - component: {fileID: 2605927397032112}
   m_Layer: 0
-  m_Name: top plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

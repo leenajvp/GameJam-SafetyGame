@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4192,6 +4192,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.06736545
       objectReference: {fileID: 0}
+    - target: {fileID: 607893226446068440, guid: 194ddafdeb47b2b45bfc5b2a7a5d040b, type: 3}
+      propertyPath: charspeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 607893227421035278, guid: 194ddafdeb47b2b45bfc5b2a7a5d040b, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -4424,6 +4428,14 @@ MonoBehaviour:
   rotationSpeed: 50
   inventory: {fileID: 406353113}
   helmetCollected: 0
+--- !u!33 &919132147531071266
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147531071261}
+  m_Mesh: {fileID: 0}
 --- !u!1 &2530849609697163903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3130223725556644864, guid: 194ddafdeb47b2b45bfc5b2a7a5d040b, type: 3}

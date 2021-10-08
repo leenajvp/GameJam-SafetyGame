@@ -2021,7 +2021,7 @@ GameObject:
   - component: {fileID: 4317467816725942481}
   - component: {fileID: 10713411173560594}
   m_Layer: 0
-  m_Name: top plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

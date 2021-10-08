@@ -1487,7 +1487,7 @@ GameObject:
   - component: {fileID: 2971982287082960858}
   - component: {fileID: 681352906820470934}
   m_Layer: 0
-  m_Name: top plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

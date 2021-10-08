@@ -1696,7 +1696,7 @@ GameObject:
   - component: {fileID: 1892679110894219866}
   - component: {fileID: 8822347280164809888}
   m_Layer: 0
-  m_Name: top plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2116,7 +2116,7 @@ GameObject:
   - component: {fileID: 7863758405491281601}
   - component: {fileID: 8155117685626769906}
   m_Layer: 0
-  m_Name: Bottom plane
+  m_Name: walk plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

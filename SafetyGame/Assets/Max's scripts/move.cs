@@ -25,7 +25,15 @@ public class move : MonoBehaviour
     {
         transform.position = transform.position + transform.forward * charspeed * Time.deltaTime;
         Collider[] colliders = Physics.OverlapSphere(transform.position, 1.001f);
-        if (colliders.Length == 1)
+        int num = 0;
+        foreach (var i in colliders)
+        {
+            if (i.name == "walk plane")
+                num += 1;
+            if (i.name == "Wood")
+                num += 1;
+        }
+        if (num == 0)
         {
             speed += acceleration * Time.deltaTime;
             if (speed > topspeed)
@@ -38,7 +46,7 @@ public class move : MonoBehaviour
         {
             foreach (var col in colliders)
             {
-                if (col.GetComponent<MeshFilter>().mesh.name == "Plane Instance")
+                if (col.name == "walk plane")
                 {
                     if (transform.rotation.eulerAngles.y != col.transform.rotation.eulerAngles.y)
                     {
