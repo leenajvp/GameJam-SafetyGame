@@ -18,7 +18,11 @@ public class Respawn : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         player.transform.position = respawnpoint.transform.position;
-        GameControlScript.health -= 1;
+        
+        
+
+        
+       
     }
 
 

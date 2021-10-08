@@ -1,75 +1,94 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameControlScript : MonoBehaviour
 {
 
+    public int healthh;
+    public int numOfHearts;
+    [SerializeField] int damage;
+    
 
-    public GameObject heart1, heart2, heart3, heart4, gameOver;
-    public static int health;
+   
+    public Image[] hearts;
+    public Sprite fullheart;
+    public Sprite emptyheart;
+    
 
+     
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        health = 3;
-        heart1.gameObject.SetActive(true);
-        heart2.gameObject.SetActive(true);
-        heart3.gameObject.SetActive(true);
-        heart4.gameObject.SetActive(false);
-
-        gameOver.gameObject.SetActive(false);
-
-    }
-
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
 
-        if (health > 4)
-            health = 4;
-        switch (health)
+        if (healthh > numOfHearts)
         {
-            case 4:
-                heart1.gameObject.SetActive(true);
-                heart2.gameObject.SetActive(true);
-                heart3.gameObject.SetActive(true);
-                heart4.gameObject.SetActive(true);
-                break;
-          
-            case 3:
-                heart1.gameObject.SetActive(true);
-                heart2.gameObject.SetActive(true);
-                heart3.gameObject.SetActive(true);
-                heart4.gameObject.SetActive(false);
-                break;
-            case 2:
-                heart1.gameObject.SetActive(true);
-                heart2.gameObject.SetActive(true);
-                heart3.gameObject.SetActive(false);
-                heart4.gameObject.SetActive(false);
-                break;
-            case 1:
-                heart1.gameObject.SetActive(true);
-                heart2.gameObject.SetActive(false);
-                heart3.gameObject.SetActive(false);
-                heart4.gameObject.SetActive(false);
-                break;
-            case 0:
-                heart1.gameObject.SetActive(false);
-                heart2.gameObject.SetActive(false);
-                heart3.gameObject.SetActive(false);
-                heart4.gameObject.SetActive(false);
-                gameOver.gameObject.SetActive(true);
-                Time.timeScale = 0;
-                Debug.Log("true");
-                break;
+            healthh = numOfHearts;
 
         }
 
 
 
+         for (int i = 0; i < hearts.Length; i++)
+        {
+            if(i < healthh)
+            {
+                hearts[i].sprite = fullheart;
+
+            }
+            else
+            {
+                hearts[i].sprite = emptyheart;
+            }
+
+
+            if (i < numOfHearts)
+            {
+                hearts[i].enabled = true;
+
+            }
+            else
+            {
+                hearts[i].enabled = false;
+
+            }
+
+        }
 
     }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "object")
+        {
+            healthh -= damage;
+            
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.transform.tag == "health")
+        {
+            healthh += damage;
+        }
+        else
+        {
+            if (other.transform.tag == "floor")
+            {
+                healthh -= damage;
+            }
+        }
+
+
+    }
+     
+    
+
+
+
+
 }
+
