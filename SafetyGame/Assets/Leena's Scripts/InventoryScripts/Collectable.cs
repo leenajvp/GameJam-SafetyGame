@@ -41,7 +41,7 @@ public class Collectable : MonoBehaviour, ICollectable
                 GameObject selectedDropSpot;
                 selectedDropSpot = hit.collider.gameObject;
                 gameObject.SetActive(true);
-                gameObject.transform.position = selectedDropSpot.transform.position;
+                transform.position = selectedDropSpot.transform.position;
 
                 isAvailable = false;
             }
