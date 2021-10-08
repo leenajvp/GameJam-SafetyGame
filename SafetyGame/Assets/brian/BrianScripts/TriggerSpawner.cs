@@ -10,11 +10,11 @@ public class TriggerSpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("trigger");
+       
         if (other.gameObject.CompareTag("Player"))
         {
             spawner.SpawnObject();
-            Debug.Log("trigger");
+            
         }
     }
 
