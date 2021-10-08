@@ -15,6 +15,8 @@ public class GameControlScript : MonoBehaviour
     public Image[] hearts;
     public Sprite fullheart;
     public Sprite emptyheart;
+
+
     
 
      
@@ -51,7 +53,12 @@ public class GameControlScript : MonoBehaviour
             else
             {
                 hearts[i].enabled = false;
+               
+            }
 
+            if (healthh == 0)
+            {
+                Time.timeScale = 0;
             }
 
         }
@@ -68,9 +75,12 @@ public class GameControlScript : MonoBehaviour
 
         if (collision.collider.tag == "object")
         {
-            healthh -= damage;
+            healthh -= 1;
+
+           
             
-            
+
+
         }
     }
 
@@ -78,18 +88,35 @@ public class GameControlScript : MonoBehaviour
     {
         if(other.transform.tag == "health")
         {
-            healthh += damage;
+            healthh += 1;
         }
         else
         {
             if (other.transform.tag == "floor")
             {
-                healthh -= damage;
+                healthh -= 1;
             }
         }
 
 
     }
+
+    public void getDamge() 
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
+
+        foreach (var col in colliders)
+        {
+            Damagingitem dltem = col.GetComponent<Damagingitem>();
+
+            if (dltem != null)
+            {
+                healthh -= damage;
+            }
+        }
+
+    }
+    
      
     
 

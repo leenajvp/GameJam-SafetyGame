@@ -22,14 +22,14 @@ public class Spawner : MonoBehaviour
         if (objectToSpawn.Count > 0)
         {
             Instantiate(objectToSpawn[index], transform.position, Quaternion.identity);
-            Debug.Log("works");
+
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -38,12 +38,22 @@ public class Spawner : MonoBehaviour
     {
         int index = isRandomized ? Random.Range(0, objectToSpawn.Count) : 0;
 
-        if(objectToSpawn.Count > 0)
+        if (objectToSpawn.Count > 0)
         {
             Instantiate(objectToSpawn[index], transform.position, Quaternion.identity);
-            Debug.Log("works");
+            
         }
+       
 
     }
+
+    
+    
+    
+
+
+
+
+
 
 }

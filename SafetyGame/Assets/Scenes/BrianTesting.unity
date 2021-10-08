@@ -2348,9 +2348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996c2caf66a748f4d850aaadf8df3402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthh: 2
+  healthh: 4
   numOfHearts: 6
-  damage: 0
+  damage: 1
   hearts:
   - {fileID: 333725996}
   - {fileID: 1246263233}
