@@ -14,10 +14,12 @@ public class move : MonoBehaviour
     [SerializeField]
     float rotspeed = 60.0f;
 
+    private Animator animState;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        animState = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,11 +43,13 @@ public class move : MonoBehaviour
         }
         if (num2 == 1)
         {
-            transform.position = transform.position + transform.up * charspeed * Time.deltaTime;
+            transform.position = transform.position + transform.up * charspeed * Time.deltaTime; //climbing
+            animState.SetInteger("AnimState", 2);
         }
         else
         {
-            transform.position = transform.position + transform.forward * charspeed * Time.deltaTime;
+            transform.position = transform.position + transform.forward * charspeed * Time.deltaTime; //walking
+            animState.SetInteger("AnimState", 0);
         }
         if (num == 0)
         {
@@ -54,7 +58,8 @@ public class move : MonoBehaviour
             {
                 speed = topspeed;
             }
-            transform.position = transform.position + -transform.up * speed * Time.deltaTime;
+            transform.position = transform.position + -transform.up * speed * Time.deltaTime; //falling
+            animState.SetInteger("AnimState", 1);
         }
         else
         {
