@@ -61,9 +61,15 @@ public class GameControlScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // DamagagingObject fallingItem = collision.collider.gameobject.GetComponent<DamagingObject>().
+        // if (fallingItem)
+        //  damange = fallingitem.damage;
+        
+
         if (collision.collider.tag == "object")
         {
             healthh -= damage;
+            
             
         }
     }
