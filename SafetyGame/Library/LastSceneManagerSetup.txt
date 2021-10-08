@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Level1.unity
+=======
+- path: Assets/Scenes/BrianTesting.unity
+>>>>>>> Brian
   isLoaded: 1
   isActive: 1
   isSubScene: 0
