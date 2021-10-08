@@ -23,15 +23,29 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + transform.forward * charspeed * Time.deltaTime;
+        //transform.position = transform.position + transform.forward * charspeed * Time.deltaTime;
         Collider[] colliders = Physics.OverlapSphere(transform.position, 1.001f);
         int num = 0;
+        int num2 = 0;
         foreach (var i in colliders)
         {
             if (i.name == "walk plane")
                 num += 1;
             if (i.name == "Wood")
                 num += 1;
+            if (i.name == "Ladder")
+            {
+                num += 1;
+                num2 += 1;
+            }
+        }
+        if (num2 == 1)
+        {
+            transform.position = transform.position + transform.up * charspeed * Time.deltaTime;
+        }
+        else
+        {
+            transform.position = transform.position + transform.forward * charspeed * Time.deltaTime;
         }
         if (num == 0)
         {
@@ -63,10 +77,8 @@ public class move : MonoBehaviour
                         if (col.transform.rotation.eulerAngles.y == 0 && transform.rotation.eulerAngles.y >= 270)
                             rotspeed = 60;
                         transform.Rotate(0, rotspeed * Time.deltaTime, 0);
-                        Debug.Log(rotspeed);
                         if (rotspeed > 0)
                         {
-                            Debug.Log("right");
                             if (col.transform.rotation.eulerAngles.y == 0)
                             {
                                 if (transform.rotation.eulerAngles.y < 30)
@@ -83,7 +95,6 @@ public class move : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("left");
                             if (col.transform.rotation.eulerAngles.y == 0)
                             {
                                 if (transform.rotation.eulerAngles.y > 300)
