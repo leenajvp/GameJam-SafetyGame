@@ -15,11 +15,11 @@ C:/Users/steph.JUNASTE.000/Documents/GitHub/GameJam-SafetyGame/SafetyGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64829
+62728
 Successfully changed project path to: C:/Users/steph.JUNASTE.000/Documents/GitHub/GameJam-SafetyGame/SafetyGame
 C:/Users/steph.JUNASTE.000/Documents/GitHub/GameJam-SafetyGame/SafetyGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 31.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,35 +35,35 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001264 seconds.
+Registered in 0.001257 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.99 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.27 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.813 seconds
+- Completed reload, in  0.817 seconds
 Domain Reload Profiling:
-	ReloadAssembly (813ms)
-		BeginReloadAssembly (42ms)
+	ReloadAssembly (818ms)
+		BeginReloadAssembly (41ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (333ms)
+		EndReloadAssembly (330ms)
 			LoadAssemblies (40ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (123ms)
+			SetupTypeCache (120ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
+			RebuildScriptCaches (25ms)
 			SetupLoadedEditorAssemblies (131ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (33ms)
+				RefreshPlugins (32ms)
 				BeforeProcessingInitializeOnLoad (7ms)
 				ProcessInitializeOnLoadAttributes (65ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
@@ -73,34 +73,34 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002687 seconds.
+Registered in 0.002697 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.889 seconds
+- Completed reload, in  0.898 seconds
 Domain Reload Profiling:
-	ReloadAssembly (890ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (898ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (717ms)
-			LoadAssemblies (68ms)
+		EndReloadAssembly (719ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (227ms)
+			SetupTypeCache (224ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (306ms)
+			SetupLoadedEditorAssemblies (313ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (245ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (253ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
@@ -110,14 +110,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1810 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 95.0 MB.
 System memory in use after: 95.0 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2259.
-Total: 2.864400 ms (FindLiveObjects: 0.175400 ms CreateObjectMapping: 0.039500 ms MarkObjects: 2.543400 ms  DeleteObjects: 0.105400 ms)
+Total: 3.199500 ms (FindLiveObjects: 0.198800 ms CreateObjectMapping: 0.047000 ms MarkObjects: 2.853200 ms  DeleteObjects: 0.099800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,169 +131,193 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Stephanie/Bucket.fbx
-  artifactKey: Guid(b59ef4c832b90a44081335e159417226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Bucket.fbx using Guid(b59ef4c832b90a44081335e159417226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3df27400d7226b16504b7afc5dc809') in 0.120555 seconds 
-  Import took 0.123545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Stephanie/littleguyTpose.fbx
-  artifactKey: Guid(3a55be137e3829c469569d00a130c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/littleguyTpose.fbx using Guid(3a55be137e3829c469569d00a130c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c816881589249c01cfacda89664e22') in 0.056122 seconds 
-  Import took 0.058761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.560892 seconds.
-  path: Assets/Scenes/StephanieTesting.unity
-  artifactKey: Guid(30a6907e3419a214d98155780a799ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StephanieTesting.unity using Guid(30a6907e3419a214d98155780a799ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df87add007c95d19d1ce8b8dade4db23') in 0.004471 seconds 
-  Import took 0.007214 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006456 seconds.
-  path: Assets/Scenes/StephanieTesting.unity
-  artifactKey: Guid(30a6907e3419a214d98155780a799ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StephanieTesting.unity using Guid(30a6907e3419a214d98155780a799ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df87add007c95d19d1ce8b8dade4db23') in 0.001824 seconds 
-  Import took 0.004337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.518912 seconds.
-  path: Assets/Stephanie/animator controller
-  artifactKey: Guid(8863d60c3344c40498eea1246fefcd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animator controller using Guid(8863d60c3344c40498eea1246fefcd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562209fbd6ab0f18fa9d2359fffc9abf') in 0.002340 seconds 
-  Import took 0.005242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.128222 seconds.
-  path: Assets/Stephanie/animationsMaximo
-  artifactKey: Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo using Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd776769a0c98dda557020ff4423b3c0') in 0.002420 seconds 
-  Import took 0.005191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.510264 seconds.
-  path: Assets/Stephanie/animationsMaximo/Falling Flat Impact.fbx
-  artifactKey: Guid(573417fa6ccf62947b5b6f607cc4bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo/Falling Flat Impact.fbx using Guid(573417fa6ccf62947b5b6f607cc4bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1e7d3cc4746feb3c2403577b4f8382') in 0.038198 seconds 
-  Import took 0.041291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000781 seconds.
-  path: Assets/Stephanie/animationsMaximo/Falling Flat Impact.fbx
-  artifactKey: Guid(573417fa6ccf62947b5b6f607cc4bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo/Falling Flat Impact.fbx using Guid(573417fa6ccf62947b5b6f607cc4bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1e7d3cc4746feb3c2403577b4f8382') in 0.042107 seconds 
-  Import took 0.045151 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.839918 seconds.
-  path: Assets/Stephanie/animationsMaximo/Mutant Walking.fbx
-  artifactKey: Guid(911d30d09a89c5548972e87666ab7524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo/Mutant Walking.fbx using Guid(911d30d09a89c5548972e87666ab7524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e7d829cada645279393fb2557658a0a') in 0.039134 seconds 
-  Import took 0.042359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.464762 seconds.
-  path: Assets/Stephanie/animationsMaximo/Standing 2H Cast Spell 01.fbx
-  artifactKey: Guid(219c3a9052ea4484a8e416c323bf467b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo/Standing 2H Cast Spell 01.fbx using Guid(219c3a9052ea4484a8e416c323bf467b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58b3e06367920a9c9361363ac52d147') in 0.038653 seconds 
-  Import took 0.041840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.721292 seconds.
   path: Assets/Stephanie/model used in maximo
   artifactKey: Guid(4c929d02096162c49aa2c32a3019e95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/model used in maximo using Guid(4c929d02096162c49aa2c32a3019e95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06dfc164dab596e4d2f41d20577ffb8c') in 0.005852 seconds 
-  Import took 0.008822 seconds .
+Start importing Assets/Stephanie/model used in maximo using Guid(4c929d02096162c49aa2c32a3019e95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee8a86dadd5d637b011db5f9d7fd964') in 0.009572 seconds 
+  Import took 0.012059 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.534088 seconds.
+  Time since last request: 0.000163 seconds.
   path: Assets/Stephanie/model used in maximo/littleguyformaximo2.fbx
   artifactKey: Guid(495538adb852df549a1a909543d8af10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/model used in maximo/littleguyformaximo2.fbx using Guid(495538adb852df549a1a909543d8af10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc227390a5e4b2283bf236faacab058') in 0.036507 seconds 
-  Import took 0.039511 seconds .
+Start importing Assets/Stephanie/model used in maximo/littleguyformaximo2.fbx using Guid(495538adb852df549a1a909543d8af10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508961a750d566391a3d3010bbca7df2') in 0.151462 seconds 
+  Import took 0.154139 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.831845 seconds.
-  path: Assets/Stephanie/Materials/glass-2502963_1280.jpg
-  artifactKey: Guid(0b2db475457437d4e9e8f8857ed39326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Materials/glass-2502963_1280.jpg using Guid(0b2db475457437d4e9e8f8857ed39326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a09be24830fc72abb29f7af6f8cebcab') in 0.019767 seconds 
-  Import took 0.022624 seconds .
+  Time since last request: 63.846614 seconds.
+  path: Assets/Stephanie/model used in maximo/littleguyphonehold3.fbx
+  artifactKey: Guid(f765add22c462684ba0fd2d468fe7938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/model used in maximo/littleguyphonehold3.fbx using Guid(f765add22c462684ba0fd2d468fe7938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c2fe95062e7a5defa7c00bc794bc84') in 0.038016 seconds 
+  Import took 0.040953 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Stephanie/Materials/ImphenziaPalette01.png
-  artifactKey: Guid(9d9b18e7e44b46a428229f03b2408e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Materials/ImphenziaPalette01.png using Guid(9d9b18e7e44b46a428229f03b2408e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc95567394d3ba907c241b651fc1006') in 0.012022 seconds 
-  Import took 0.014640 seconds .
+  Time since last request: 0.000188 seconds.
+  path: Assets/Stephanie/model used in maximo/littleguywithyellohelmet2.fbx
+  artifactKey: Guid(9f74daf34f336c14ba52153876b570fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/model used in maximo/littleguywithyellohelmet2.fbx using Guid(9f74daf34f336c14ba52153876b570fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc04d272558bb03ebc43ce6fde831ce6') in 0.028146 seconds 
+  Import took 0.030624 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Stephanie/Materials/New Material 2.mat
-  artifactKey: Guid(376af5d95489a1a49a09936040d38da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Materials/New Material 2.mat using Guid(376af5d95489a1a49a09936040d38da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999d0f9bdbf824e0e54074f091df89ed') in 0.011917 seconds 
-  Import took 0.014912 seconds .
+  Time since last request: 21.074359 seconds.
+  path: Assets/Stephanie/animationsMaximo/Falling Flat Impact.fbx
+  artifactKey: Guid(573417fa6ccf62947b5b6f607cc4bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Falling Flat Impact.fbx using Guid(573417fa6ccf62947b5b6f607cc4bead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527ded1d2f55007e34ffe2ed0f2daa4a') in 0.053909 seconds 
+  Import took 0.056892 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Stephanie/Materials/New Material 1.mat
-  artifactKey: Guid(e627b59969b39a74487f0f61b42297a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Materials/New Material 1.mat using Guid(e627b59969b39a74487f0f61b42297a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a7546c6b71f966298639e1e4f4381f') in 0.011354 seconds 
-  Import took 0.014221 seconds .
+  Time since last request: 0.000217 seconds.
+  path: Assets/Stephanie/animationsMaximo/Mutant Walking.fbx
+  artifactKey: Guid(911d30d09a89c5548972e87666ab7524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Mutant Walking.fbx using Guid(911d30d09a89c5548972e87666ab7524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0fade65430030b44b9fc00cb3ef95bf') in 0.041912 seconds 
+  Import took 0.045003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Stephanie/animationsMaximo/Standing 2H Cast Spell 01.fbx
+  artifactKey: Guid(219c3a9052ea4484a8e416c323bf467b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Standing 2H Cast Spell 01.fbx using Guid(219c3a9052ea4484a8e416c323bf467b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1cd54f6fc25cf9eee466e76eef0d7e') in 0.038719 seconds 
+  Import took 0.041754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.541554 seconds.
+  path: Assets/Stephanie/animationsMaximo
+  artifactKey: Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo using Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef4c727c0dfdd5ee9d249c8ab649f2b') in 0.005556 seconds 
+  Import took 0.008337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.364140 seconds.
+  path: Assets/Stephanie/animationsMaximo/Idle3.fbx
+  artifactKey: Guid(e6a53452e5470d24b926ed509a2dad2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Idle3.fbx using Guid(e6a53452e5470d24b926ed509a2dad2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce4025e66e2818fb4c9770a31eaf5b1') in 0.010668 seconds 
+  Import took 0.013817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.395798 seconds.
+  path: Assets/Stephanie/model used in maximo/Idle3.fbx
+  artifactKey: Guid(9fd7410e23829d248a62cfba32e6d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/model used in maximo/Idle3.fbx using Guid(9fd7410e23829d248a62cfba32e6d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdecc34c052a2083fee4975ded097ea8') in 0.007367 seconds 
+  Import took 0.010431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000695 seconds.
+  path: Assets/Stephanie/model used in maximo/Idle3.fbx
+  artifactKey: Guid(9fd7410e23829d248a62cfba32e6d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/model used in maximo/Idle3.fbx using Guid(9fd7410e23829d248a62cfba32e6d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdecc34c052a2083fee4975ded097ea8') in 0.007523 seconds 
+  Import took 0.010529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 348.263707 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket
+  artifactKey: Guid(b1f775b07d632b241b36a4b1f7a7afa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket using Guid(b1f775b07d632b241b36a4b1f7a7afa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45c680b2bd3339ec73ba7dc4b35f69f') in 0.005985 seconds 
+  Import took 0.008964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.593998 seconds.
+  path: Assets/Stephanie/animationsMaximo/Yellowhelmet
+  artifactKey: Guid(60e855e9c0fb0f146ad494f2952a69f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Yellowhelmet using Guid(60e855e9c0fb0f146ad494f2952a69f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143bb60fc6c5fbd0c61adca61357a5fe') in 0.005990 seconds 
+  Import took 0.008778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.381445 seconds.
+  path: Assets/Stephanie/animationsMaximo/Yellowhelmet/Sitting Idleyellow.fbx
+  artifactKey: Guid(fcd469e4922cc5f4eb8d4325186923fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Yellowhelmet/Sitting Idleyellow.fbx using Guid(fcd469e4922cc5f4eb8d4325186923fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd6e5b2deccc7941afeebd7ccadd420') in 0.030010 seconds 
+  Import took 0.033204 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000187 seconds.
-  path: Assets/Stephanie/Materials/New Material.mat
-  artifactKey: Guid(cee42b425485f9e4bada9403df19678f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Materials/New Material.mat using Guid(cee42b425485f9e4bada9403df19678f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3166f0a91db6b73253d62edd38941edb') in 0.011853 seconds 
-  Import took 0.014848 seconds .
+  path: Assets/Stephanie/animationsMaximo/Yellowhelmet/Sitting Rubbing Armyellow.fbx
+  artifactKey: Guid(b72c7da001ddeca4fa049b4e7713ad38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Yellowhelmet/Sitting Rubbing Armyellow.fbx using Guid(b72c7da001ddeca4fa049b4e7713ad38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c173afd184dceb06c9646c4d54f118bf') in 0.029870 seconds 
+  Import took 0.032828 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Stephanie/Materials/ImphenziaPalette01-256-Gradient.png
-  artifactKey: Guid(805b6344cc95ec7458e3ed7a743d49b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Materials/ImphenziaPalette01-256-Gradient.png using Guid(805b6344cc95ec7458e3ed7a743d49b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336e2296d4ca96a09ca97452bfc40d4c') in 0.008166 seconds 
-  Import took 0.010630 seconds .
+  Time since last request: 0.000168 seconds.
+  path: Assets/Stephanie/animationsMaximo/Yellowhelmet/Strut Walkingyellow.fbx
+  artifactKey: Guid(442dc9e61cde9c1408114a9cf62506f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Yellowhelmet/Strut Walkingyellow.fbx using Guid(442dc9e61cde9c1408114a9cf62506f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ce0761acebea784867e4b3d7240b05') in 0.030310 seconds 
+  Import took 0.033189 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 309.769160 seconds.
-  path: Assets/Stephanie/animationsMaximo/Idle.fbx
-  artifactKey: Guid(4de7fdd801cf53a4d8f2cbc013a816e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo/Idle.fbx using Guid(4de7fdd801cf53a4d8f2cbc013a816e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9cdc319ed398fb15d1360de1106d9b') in 0.045131 seconds 
-  Import took 0.048729 seconds .
+  Time since last request: 0.000161 seconds.
+  path: Assets/Stephanie/animationsMaximo/Yellowhelmet/T-PosewithYellowHelmet.fbx
+  artifactKey: Guid(3eee4dece8e72ae44b7a41fafa274018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Yellowhelmet/T-PosewithYellowHelmet.fbx using Guid(3eee4dece8e72ae44b7a41fafa274018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05b2223e45f2228fce868f155978c52b') in 0.031157 seconds 
+  Import took 0.033733 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 363.191999 seconds.
-  path: Assets/Stephanie/animationsMaximo/Idle3.fbx
-  artifactKey: Guid(dec33bf2bcaa00542a1272f783fdf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo/Idle3.fbx using Guid(dec33bf2bcaa00542a1272f783fdf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb363ce7ac4a2c09b9f8d6784dc48c24') in 0.011652 seconds 
-  Import took 0.014717 seconds .
+  Time since last request: 0.000194 seconds.
+  path: Assets/Stephanie/animationsMaximo/Yellowhelmet/Walkingyellow.fbx
+  artifactKey: Guid(e37ef308cd0911c4c921189253fc99fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Yellowhelmet/Walkingyellow.fbx using Guid(e37ef308cd0911c4c921189253fc99fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836cc3e29137dba31df5d3efd6b4e3f5') in 0.030871 seconds 
+  Import took 0.033822 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.555759 seconds.
-  path: Assets/Stephanie/Materials
-  artifactKey: Guid(20903c285efabd244b68c8c08b969a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/Materials using Guid(20903c285efabd244b68c8c08b969a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b100789948cee9a8d6830f5f19ba4e') in 0.005651 seconds 
-  Import took 0.008600 seconds .
+  Time since last request: 0.000172 seconds.
+  path: Assets/Stephanie/animationsMaximo/Yellowhelmet/talkingonthephoneyellow.fbx
+  artifactKey: Guid(532cee1cbeab7f74c93014a9d5f791fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/Yellowhelmet/talkingonthephoneyellow.fbx using Guid(532cee1cbeab7f74c93014a9d5f791fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5738a901321439b2d07d9c6437a3d5') in 0.046430 seconds 
+  Import took 0.049271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 361.704832 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/Joyful Jumpbucket.fbx
+  artifactKey: Guid(ac382ec5b60752a4fa772abf4f4ffdcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Joyful Jumpbucket.fbx using Guid(ac382ec5b60752a4fa772abf4f4ffdcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f656257598256b89638522eeb346f516') in 0.044564 seconds 
+  Import took 0.047927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/Strut Walkingwithbucket (1).fbx
+  artifactKey: Guid(601c9b8188f3f264589458a77b5d5ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Strut Walkingwithbucket (1).fbx using Guid(601c9b8188f3f264589458a77b5d5ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '413cbec4ad968e6ba446308ea1718917') in 0.038882 seconds 
+  Import took 0.042021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/T-PosewithBucket (1).fbx
+  artifactKey: Guid(e013b768b004ef34c8ba5b13c7bd1aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/T-PosewithBucket (1).fbx using Guid(e013b768b004ef34c8ba5b13c7bd1aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7784cb880c8e203e37414809e9f4b4c7') in 0.041994 seconds 
+  Import took 0.045039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 307.207984 seconds.
+  path: Assets/Stephanie/model used in maximo/Bucket and helmet with guy mesh.fbx
+  artifactKey: Guid(c9216d5c5b4a10b40a8f3497695d98ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/model used in maximo/Bucket and helmet with guy mesh.fbx using Guid(c9216d5c5b4a10b40a8f3497695d98ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4a06ffe86780dcc773b493bb1a6382') in 0.036688 seconds 
+  Import took 0.039897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.795867 seconds.
+  path: Assets/Stephanie/model used in maximo/Bucket and helmet with guy mesh1.fbx
+  artifactKey: Guid(85221cf1b9f502447b6697687bd4e7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/model used in maximo/Bucket and helmet with guy mesh1.fbx using Guid(85221cf1b9f502447b6697687bd4e7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd67eb9b186758f658bc9e3a71163791c') in 0.040681 seconds 
+  Import took 0.043805 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
