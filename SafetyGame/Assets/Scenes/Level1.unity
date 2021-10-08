@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2388,7 +2388,7 @@ GameObject:
   - component: {fileID: 928242181}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3613,9 +3613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 533eed7500da1a9418442d65691d66dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn:
-  - {fileID: 4800301969081963284, guid: 8a4fae01d56c9ca4b9112a58f7b70c0f, type: 3}
-  isRandomized: 1
+  objectToSpawn: []
+  isRandomized: 0
 --- !u!1001 &1455572643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6785,7 +6784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthh: 6
   numOfHearts: 6
-  damage: 1
+  damage: 6
   hearts:
   - {fileID: 1171048438}
   - {fileID: 980734156}
