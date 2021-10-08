@@ -74,8 +74,13 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
+<<<<<<< HEAD
   - {fileID: 19}
   m_MainToolbar: {fileID: 19}
+=======
+  - {fileID: 18}
+  m_MainToolbar: {fileID: 18}
+>>>>>>> Brian
   m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
@@ -103,7 +108,11 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 95
+=======
+  controlID: 16
+>>>>>>> Brian
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +158,11 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 156
+=======
+  controlID: 91
+>>>>>>> Brian
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -447,9 +460,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: ece5feff
       m_LastClickedID: -72212
       m_ExpandedIDs: bee0ffff6ce1ffffa6e3ffffa8e3fffffce3ffffa8e4ffffaae4ffff48e6fffff6e6ffff2ceaffff70eaffffb4eaffffb6eaffff6eefffff1cf0ffffb0f0ffff5ef1ffffd8f6ffff86f7ffff50fbfffffe4400005045000090450000a4450000ec45000014460000
+=======
+      m_SelectedIDs: da460000
+      m_LastClickedID: 18138
+      m_ExpandedIDs: d4f9ffff0e470000
+>>>>>>> Brian
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -561,9 +580,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 6a520000
     m_LastClickedID: 21098
     m_ExpandedIDs: 00000000585200005a5200005c5200006c5200007652000000ca9a3b
+=======
+    m_SelectedIDs: 50530000
+    m_LastClickedID: 21328
+    m_ExpandedIDs: 000000003a5300003c5300003e53000000ca9a3b
+>>>>>>> Brian
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,7 +616,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000585200005a5200005c520000
+=======
+    m_ExpandedIDs: 000000003a5300003c5300003e530000
+>>>>>>> Brian
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -618,8 +647,13 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: bc570000065c0000365d00009a520000cc520000
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: 
+>>>>>>> Brian
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -693,10 +727,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -640
     m_HBaseRangeMax: 640
     m_VBaseRangeMin: -360
     m_VBaseRangeMax: 360
+=======
+    m_HBaseRangeMin: -499
+    m_HBaseRangeMax: 499
+    m_VBaseRangeMin: -175.5
+    m_VBaseRangeMax: 175.5
+>>>>>>> Brian
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -713,21 +754,36 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
+<<<<<<< HEAD
       y: 21
       width: 571.6667
       height: 324.3333
     m_Scale: {x: 0.4466146, y: 0.4466146}
     m_Translation: {x: 285.83334, y: 162.16666}
+=======
+      y: 0
+      width: 998
+      height: 351
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 499, y: 175.5}
+>>>>>>> Brian
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -640
       y: -363.10202
       width: 1280
       height: 726.20404
+=======
+      x: -499
+      y: -175.5
+      width: 998
+      height: 351
+>>>>>>> Brian
     m_MinimalGUI: 1
   m_defaultScale: 0.4466146
   m_LastWindowPixelSize: {x: 857.5, y: 518}
@@ -772,9 +828,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -226.1046, y: 36.42577, z: 17.884464}
     speed: 2
     m_Value: {x: -226.1046, y: 36.42577, z: 17.884464}
+=======
+    m_Target: {x: -218.33922, y: 33.91007, z: -3.7815933}
+    speed: 2
+    m_Value: {x: -218.33922, y: 33.91007, z: -3.7815933}
+>>>>>>> Brian
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -821,6 +883,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.3339919, y: 0.19373873, z: -0.07034884, w: -0.9197998}
     speed: 2
     m_Value: {x: -0.3339809, y: 0.19373235, z: -0.07034652, w: -0.9197695}
@@ -828,6 +891,15 @@ MonoBehaviour:
     m_Target: 26.915854
     speed: 2
     m_Value: 26.915854
+=======
+    m_Target: {x: -0.17428476, y: 0.08319633, z: -0.014767792, w: -0.9810853}
+    speed: 2
+    m_Value: {x: -0.17430297, y: 0.08172284, z: -0.0145060355, w: -0.9811878}
+  m_Size:
+    m_Target: 16.620895
+    speed: 2
+    m_Value: 16.620895
+>>>>>>> Brian
   m_Ortho:
     m_Target: 0
     speed: 2
