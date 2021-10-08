@@ -15,11 +15,11 @@ C:/Users/steph.JUNASTE.000/Documents/GitHub/GameJam-SafetyGame/SafetyGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53425
+61405
 Successfully changed project path to: C:/Users/steph.JUNASTE.000/Documents/GitHub/GameJam-SafetyGame/SafetyGame
 C:/Users/steph.JUNASTE.000/Documents/GitHub/GameJam-SafetyGame/SafetyGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 33.15 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -35,72 +35,72 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001360 seconds.
+Registered in 0.001294 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.15 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.854 seconds
+- Completed reload, in  0.825 seconds
 Domain Reload Profiling:
-	ReloadAssembly (854ms)
-		BeginReloadAssembly (43ms)
+	ReloadAssembly (825ms)
+		BeginReloadAssembly (42ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (362ms)
-			LoadAssemblies (41ms)
+		EndReloadAssembly (333ms)
+			LoadAssemblies (40ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (128ms)
+			SetupTypeCache (122ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (153ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (131ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (33ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (86ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (65ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002689 seconds.
+Registered in 0.002697 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.909 seconds
+- Completed reload, in  0.889 seconds
 Domain Reload Profiling:
-	ReloadAssembly (910ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (890ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (734ms)
-			LoadAssemblies (70ms)
+		EndReloadAssembly (716ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (229ms)
+			SetupTypeCache (225ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (315ms)
+			SetupLoadedEditorAssemblies (307ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (250ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (245ms)
 				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
@@ -110,14 +110,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1811 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 95.0 MB.
 System memory in use after: 95.1 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2260.
-Total: 3.307500 ms (FindLiveObjects: 0.217800 ms CreateObjectMapping: 0.049900 ms MarkObjects: 2.926700 ms  DeleteObjects: 0.111700 ms)
+Total: 3.276000 ms (FindLiveObjects: 0.172700 ms CreateObjectMapping: 0.041600 ms MarkObjects: 2.954500 ms  DeleteObjects: 0.106000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,33 +131,105 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Stephanie/ladder.fbx
-  artifactKey: Guid(3695869cb77b468408ddbddb00efa5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/ladder.fbx using Guid(3695869cb77b468408ddbddb00efa5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8f1546afb77ee8c448792460daebc3') in 0.116410 seconds 
-  Import took 0.119147 seconds .
+  path: Assets/Stephanie/animationsMaximo/withbucket/Joyful Jump.fbx
+  artifactKey: Guid(6c23b6969d845e94e9de01b34de6a4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Joyful Jump.fbx using Guid(6c23b6969d845e94e9de01b34de6a4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc10b9f4907efe136a22f8a5028e0918') in 0.151122 seconds 
+  Import took 0.154032 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Stephanie/heart.fbx
-  artifactKey: Guid(1843933d691913f4da73c652075f9ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/heart.fbx using Guid(1843933d691913f4da73c652075f9ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6c90f3d389280004a27a354f8940d5') in 0.025299 seconds 
-  Import took 0.027766 seconds .
+  Time since last request: 0.000204 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/Start Climbing Ladder.fbx
+  artifactKey: Guid(fa93b09b0ac573240a6364b05c1d6c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Start Climbing Ladder.fbx using Guid(fa93b09b0ac573240a6364b05c1d6c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85b69775a02dc87459a72a0eda413ca') in 0.043321 seconds 
+  Import took 0.046478 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.228310 seconds.
-  path: Assets/Stephanie/animationsMaximo
-  artifactKey: Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo using Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef4c727c0dfdd5ee9d249c8ab649f2b') in 0.004968 seconds 
-  Import took 0.007601 seconds .
+  Time since last request: 0.000166 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/T-Pose.fbx
+  artifactKey: Guid(c9dafd83981951d45a46f63e551059bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/T-Pose.fbx using Guid(c9dafd83981951d45a46f63e551059bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16cf3d27d06c248348974c4e45dbf49a') in 0.044397 seconds 
+  Import took 0.047158 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.007643 seconds.
-  path: Assets/Stephanie/animationsMaximo
-  artifactKey: Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Stephanie/animationsMaximo using Guid(aa5b69f3f1b4cdb48a96ee2daf2989c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef4c727c0dfdd5ee9d249c8ab649f2b') in 0.001466 seconds 
-  Import took 0.003390 seconds .
+  Time since last request: 0.000229 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/Start Walking.fbx
+  artifactKey: Guid(4d6423a36960c184f823181f38c18b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Start Walking.fbx using Guid(4d6423a36960c184f823181f38c18b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224bc6d25cade981f03b3f4b900a8894') in 0.041637 seconds 
+  Import took 0.044916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/FallingFlat.fbx
+  artifactKey: Guid(5bd5d426ae93c6145acbc2ee9ea9adbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/FallingFlat.fbx using Guid(5bd5d426ae93c6145acbc2ee9ea9adbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43017a055c0cbf1f88912fd28642ad39') in 0.040369 seconds 
+  Import took 0.043208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/Strut Walking.fbx
+  artifactKey: Guid(e70cbc1a3fd31764dbd8b0b58250c53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Strut Walking.fbx using Guid(e70cbc1a3fd31764dbd8b0b58250c53b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411e84ecd9a862a5d52706a219efea4c') in 0.041192 seconds 
+  Import took 0.043972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/Climbing Ladder.fbx
+  artifactKey: Guid(7a97c114e2f238c4791a1d5a1afdd7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Climbing Ladder.fbx using Guid(7a97c114e2f238c4791a1d5a1afdd7a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2567116111c13778519b921deaae386') in 0.040676 seconds 
+  Import took 0.043609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/Climbing To Top.fbx
+  artifactKey: Guid(be3defd8c64c88e40bc3592ef2d99f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/Climbing To Top.fbx using Guid(be3defd8c64c88e40bc3592ef2d99f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1e84338b8dd4b0237b4cc003ba0947') in 0.039261 seconds 
+  Import took 0.042217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.057157 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/in placeAnim
+  artifactKey: Guid(3b8f1b18916b43849aa4561f36efe225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/in placeAnim using Guid(3b8f1b18916b43849aa4561f36efe225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1e193e2391b21bbb952b733d76e243') in 0.004706 seconds 
+  Import took 0.007517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/in placeAnim
+  artifactKey: Guid(3b8f1b18916b43849aa4561f36efe225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/in placeAnim using Guid(3b8f1b18916b43849aa4561f36efe225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1e193e2391b21bbb952b733d76e243') in 0.001730 seconds 
+  Import took 0.004482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.207086 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/in placeAnim/Climbing Ladder in place.fbx
+  artifactKey: Guid(6fce41d68d829de4e858df4638719777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/in placeAnim/Climbing Ladder in place.fbx using Guid(6fce41d68d829de4e858df4638719777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8c4eb2f371f11ac5f4c3de7e858ac0') in 0.042445 seconds 
+  Import took 0.045548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/in placeAnim/Strut Walking in place(4).fbx
+  artifactKey: Guid(cb25b638035ea5f44bdc2a484227089d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/in placeAnim/Strut Walking in place(4).fbx using Guid(cb25b638035ea5f44bdc2a484227089d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffec21d90d1330a970c8f9ae2ebab4e8') in 0.042169 seconds 
+  Import took 0.044837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Stephanie/animationsMaximo/withbucket/in placeAnim/Falling Idle.fbx
+  artifactKey: Guid(487e40bd03251c44daa2c52277ae8052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/animationsMaximo/withbucket/in placeAnim/Falling Idle.fbx using Guid(487e40bd03251c44daa2c52277ae8052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0616cbbb85bb99da461aa762974d8c') in 0.041396 seconds 
+  Import took 0.044489 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
