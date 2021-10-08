@@ -564,8 +564,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn:
   - {fileID: 4800301969081963284, guid: 8a4fae01d56c9ca4b9112a58f7b70c0f, type: 3}
-  - {fileID: 4800301969081963284, guid: 8a4fae01d56c9ca4b9112a58f7b70c0f, type: 3}
-  - {fileID: 1180742259}
   isRandomized: 1
 --- !u!4 &688377641
 Transform:
