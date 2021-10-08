@@ -41,6 +41,8 @@ public class Collectable : MonoBehaviour, ICollectable
                 GameObject selectedDropSpot;
                 selectedDropSpot = hit.collider.gameObject;
                 gameObject.SetActive(true);
+                transform.localScale = selectedDropSpot.transform.localScale;
+                transform.rotation = selectedDropSpot.transform.rotation;
                 transform.position = selectedDropSpot.transform.position;
 
                 isAvailable = false;
