@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Damagingitem : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Image itemImage;
+    public int damage = 3;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        gameObject.GetComponent<GameControlScript>().getDamge();
+        
         
     }
 }

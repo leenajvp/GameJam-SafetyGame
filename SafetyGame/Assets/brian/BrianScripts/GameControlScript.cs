@@ -68,19 +68,12 @@ public class GameControlScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // DamagagingObject fallingItem = collision.collider.gameobject.GetComponent<DamagingObject>().
-        // if (fallingItem)
-        //  damange = fallingitem.damage;
-        
-
         if (collision.collider.tag == "object")
         {
-            healthh -= 1;
-
-           
+            Damagingitem dItem = collision.gameObject.GetComponent<Damagingitem>();
             
 
-
+            healthh -= dItem.damage;
         }
     }
 
@@ -100,27 +93,6 @@ public class GameControlScript : MonoBehaviour
 
 
     }
-
-    public void getDamge() 
-    {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
-
-        foreach (var col in colliders)
-        {
-            Damagingitem dltem = col.GetComponent<Damagingitem>();
-
-            if (dltem != null)
-            {
-                healthh -= damage;
-            }
-        }
-
-    }
-    
-     
-    
-
-
 
 
 }
