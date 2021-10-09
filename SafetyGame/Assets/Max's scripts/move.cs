@@ -156,4 +156,9 @@ public class move : MonoBehaviour
             }
         }
     }
+
+    public void PushPlayer()
+    {
+        // Push player off the track
+    }
 }

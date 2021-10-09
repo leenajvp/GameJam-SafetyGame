@@ -10,11 +10,11 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     Image img;
     [SerializeField]
-    Sprite sprite1;
+    Sprite piano;
     [SerializeField]
-    Sprite sprite2;
+    Sprite hammer;
     [SerializeField]
-    Sprite sprite3;
+    Sprite axe;
     public List<GameObject> objectToSpawn = new List<GameObject>();
 
 
@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        img.enabled = false;
     }
     // Update is called once per frame
     void Update()
@@ -39,16 +39,25 @@ public class Spawner : MonoBehaviour
         }
         if (objectToSpawn[index].name == "hammer")
         {
-            img.sprite = sprite1;
+            img.sprite = hammer;
         }
         if (objectToSpawn[index].name == "piano")
         {
-            img.sprite = sprite1;
+            img.sprite = piano;
         }
         if (objectToSpawn[index].name == "axe")
         {
-            img.sprite = sprite1;
+            img.sprite = axe;
         }
+
+        StartCoroutine(TurnOffImage());
+    }
+
+    private IEnumerator TurnOffImage()
+    {
+        yield return new WaitForSeconds(2);
+
+        img.enabled = false;
     }
 
     
