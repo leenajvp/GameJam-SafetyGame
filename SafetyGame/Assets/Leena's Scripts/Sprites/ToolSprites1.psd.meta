@@ -4,28 +4,34 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4575607398965963723
-    second: Piano
+    second: ToolSprites1_0
   - first:
       213: -380800388242839359
-    second: ladder
+    second: ToolSprites1_1
   - first:
       213: 6273835728134231100
-    second: Hammer
+    second: ToolSprites1_2
   - first:
       213: 6354802060686909502
-    second: Axe
+    second: ToolSprites1_3
   - first:
       213: -7761011520767419281
-    second: Mouse
+    second: ToolSprites1_5
   - first:
       213: -7013920871755699902
     second: ToolSprites1_9
   - first:
       213: 1509457097915725446
-    second: Drop
+    second: ToolSprites1_4
   - first:
       213: 752677855919292319
-    second: Drag
+    second: ToolSprites1_6
+  - first:
+      213: 7287995364592861099
+    second: ToolSprites1_7
+  - first:
+      213: -845591688312076317
+    second: ToolSprites1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,7 +157,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Piano
+      name: ToolSprites1_0
       rect:
         serializedVersion: 2
         x: 63
@@ -172,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ladder
+      name: ToolSprites1_1
       rect:
         serializedVersion: 2
         x: 838
@@ -193,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hammer
+      name: ToolSprites1_2
       rect:
         serializedVersion: 2
         x: 1667
@@ -214,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Axe
+      name: ToolSprites1_3
       rect:
         serializedVersion: 2
         x: 6
@@ -235,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mouse
+      name: ToolSprites1_5
       rect:
         serializedVersion: 2
         x: 1825
@@ -277,13 +283,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drop
+      name: ToolSprites1_4
       rect:
         serializedVersion: 2
-        x: 868
-        y: 1738
-        width: 869
-        height: 853
+        x: 1001
+        y: 1877
+        width: 718
+        height: 705
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,13 +304,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drag
+      name: ToolSprites1_6
       rect:
         serializedVersion: 2
-        x: 352
-        y: 771
-        width: 624
-        height: 571
+        x: 909
+        y: 1745
+        width: 277
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,6 +320,48 @@ TextureImporter:
       bones: []
       spriteID: f9f3f58a58c027a00800000000000000
       internalID: 752677855919292319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolSprites1_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 970
+        width: 385
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf304fab29242560800000000000000
+      internalID: 7287995364592861099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolSprites1_8
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 773
+        width: 495
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7c221f6dad344f0800000000000000
+      internalID: -845591688312076317
       vertices: []
       indices: 
       edges: []

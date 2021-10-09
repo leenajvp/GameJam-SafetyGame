@@ -10,13 +10,16 @@ public class TriggerSpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       
+        
+        
         if (other.gameObject.CompareTag("Player"))
         {
             spawner.SpawnObject();
             
         }
     }
+
+    
 
     // Start is called before the first frame update
     void Start()

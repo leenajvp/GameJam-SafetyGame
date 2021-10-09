@@ -11,7 +11,10 @@ public class destroyObject : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameobj);
+        if (collision.collider.tag == "Player")
+        {
+            Destroy(gameobj);
+        }
     }
 
 

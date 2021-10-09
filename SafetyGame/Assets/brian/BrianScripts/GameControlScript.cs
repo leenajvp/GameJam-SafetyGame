@@ -56,7 +56,7 @@ public class GameControlScript : MonoBehaviour
                
             }
 
-            if (healthh == 0)
+            if (healthh <= 0)
             {
                 Time.timeScale = 0;
             }
@@ -95,13 +95,13 @@ public class GameControlScript : MonoBehaviour
     {
         if(other.transform.tag == "health")
         {
-            healthh += 1;
+            healthh += damage;
         }
         else
         {
             if (other.transform.tag == "floor")
             {
-                healthh -= 1;
+                healthh -= damage;
             }
         }
 

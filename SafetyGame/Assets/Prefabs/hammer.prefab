@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf1698c5b0204d4999865171b806295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameobj: {fileID: 0}
+  gameobj: {fileID: 4800301969081963284}
 --- !u!114 &-4998552873209521629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,3 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6cd03b4163dcf4b8f2ef32e5bd460d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  image: {fileID: 0}
