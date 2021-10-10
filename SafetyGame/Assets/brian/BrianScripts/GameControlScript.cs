@@ -4,131 +4,51 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameControlScript : MonoBehaviour
-{
-
-    public int healthh;
-    public int numOfHearts;
-    [SerializeField] int damage;
-    
-
-   
+{ 
     public Image[] hearts;
     public Sprite fullheart;
     public Sprite emptyheart;
 
-
-    
-
-     
+    int maxhealth = 6;
+    int minhealth = 0;
+    int starthealth = 6;
 
     public void Update()
     {
 
-        if (healthh > numOfHearts)
+    }
+
+    public void health(int x)
+    {
+        starthealth = starthealth + x;
+        if (starthealth < minhealth)
+            starthealth = minhealth;
+        if (starthealth > maxhealth)
+            starthealth = maxhealth;
+        Debug.Log(starthealth);
+        for (int i = 0; i < hearts.Length; i++)
         {
-            healthh = numOfHearts;
-
-        }
-
-
-
-         for (int i = 0; i < hearts.Length; i++)
-        {
-            if(i < healthh)
+            if (i + 1 <= starthealth)
             {
                 hearts[i].sprite = fullheart;
-
             }
             else
-            {
                 hearts[i].sprite = emptyheart;
-            }
-
-
-            if (i < numOfHearts)
-            {
-                hearts[i].enabled = true;
-
-            }
-            else
-            {
-                hearts[i].enabled = false;
-               
-            }
-
-            if (healthh <= 0)
-            {
-                Time.timeScale = 0;
-            }
-
         }
-
     }
-
-
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
-        // DamagagingObject fallingItem = collision.collider.gameobject.GetComponent<DamagingObject>().
-        // if (fallingItem)
-        //  damange = fallingitem.damage;
-        
-
-        if (collision.collider.tag == "object")
+        idamage fallobj = collision.collider.GetComponent<idamage>();
+        if (fallobj != null)
         {
-            Damagingitem dItem = collision.gameObject.GetComponent<Damagingitem>();
-
-                if (dItem)
-            {
-                healthh -= dItem.damage;
-            }
-
-            
-
-           
-            
-
-
+            int damage = fallobj.getdamage();
+            fallobj.destroy();
+            // if (bool helmeton = true)
+            // (health(0);
+            //else
+            // health(damage)
+            health(damage);
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.transform.tag == "health")
-        {
-            healthh += damage;
-        }
-        else
-        {
-            if (other.transform.tag == "floor")
-            {
-                healthh -= damage;
-            }
-        }
-
-
-    }
-
-    public void getDamge() 
-    {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
-
-        foreach (var col in colliders)
-        {
-            Damagingitem dltem = col.GetComponent<Damagingitem>();
-
-            if (dltem != null)
-            {
-                healthh -= damage;
-            }
-        }
-
-    }
-    
-     
-    
-
-
-
-
 }
 

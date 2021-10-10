@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 1207335321179614902}
   - component: {fileID: 1678690847905217804}
   - component: {fileID: 1678690847905217806}
-  - component: {fileID: 3711822066737581922}
-  - component: {fileID: 6999877359318886758}
+  - component: {fileID: 6221494893601907461}
   m_Layer: 0
   m_Name: piano
   m_TagString: object
@@ -65,7 +64,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 37.81154, y: 9.961085, z: 45.336243}
   m_Center: {x: 0.7514603, y: -11.576915, z: 0.81134796}
---- !u!114 &3711822066737581922
+--- !u!114 &6221494893601907461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,24 +73,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1984541245111874572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccf1698c5b0204d4999865171b806295, type: 3}
+  m_Script: {fileID: 11500000, guid: 059841bc4d1d28342b6d711d28029f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameobj: {fileID: 1984541245111874572}
---- !u!114 &6999877359318886758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984541245111874572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a6cd03b4163dcf4b8f2ef32e5bd460d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 6
-  image: {fileID: 0}
+  dam: -6
 --- !u!1 &2073779958698621753
 GameObject:
   m_ObjectHideFlags: 0
