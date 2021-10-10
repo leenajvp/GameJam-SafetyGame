@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 9113616642662876683}
   - component: {fileID: 6457851000330040001}
   - component: {fileID: -3688477502321539729}
-  - component: {fileID: 4007143812167051751}
-  - component: {fileID: -6033906262223165458}
-  - component: {fileID: -4998552873209521629}
+  - component: {fileID: -1647876751046425364}
+  - component: {fileID: 941192696518474287}
   m_Layer: 0
   m_Name: hammer
   m_TagString: object
@@ -100,7 +99,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.054566514, z: 0.027154945}
   m_Center: {x: 0, y: -0.022283258, z: -0.0034542624}
---- !u!54 &4007143812167051751
+--- !u!114 &-1647876751046425364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800301969081963284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059841bc4d1d28342b6d711d28029f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dam: -2
+--- !u!54 &941192696518474287
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,30 +128,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-6033906262223165458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4800301969081963284}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccf1698c5b0204d4999865171b806295, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameobj: {fileID: 4800301969081963284}
---- !u!114 &-4998552873209521629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4800301969081963284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a6cd03b4163dcf4b8f2ef32e5bd460d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  image: {fileID: 0}
