@@ -10,7 +10,7 @@ public class PushItems : MonoBehaviour
 
             if (player)
             {
-                player.PushPlayer();
+                //player.PushPlayer();
             }
         }
     }

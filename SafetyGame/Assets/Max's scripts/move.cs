@@ -14,14 +14,15 @@ public class move : MonoBehaviour
     [SerializeField]
     float rotspeed = 60.0f;
 
+    [SerializeField]
+    Transform startPos;
+
     private Animator animState;
 
     // Start is called before the first frame update
     void Start()
     {
-       
-
-
+        //transform.position = startPos.transform.position;
         animState = GetComponent<Animator>();
     }
 
@@ -68,6 +69,18 @@ public class move : MonoBehaviour
         {
             foreach (var col in colliders)
             {
+                if (col.name == "Goal")
+                {
+                    charspeed = 0;
+                    animState.SetInteger("AnimState", 3);
+                }
+
+                if (col.name == "PushObject")
+                {
+                    transform.position = transform.position + transform.right * 3;
+                    Debug.Log("push");
+                }
+
                 if (col.name == "walk plane")
                 {
                     if (transform.rotation.eulerAngles.y != col.transform.rotation.eulerAngles.y)
@@ -155,10 +168,5 @@ public class move : MonoBehaviour
                 }
             }
         }
-    }
-
-    public void PushPlayer()
-    {
-        // Push player off the track
     }
 }

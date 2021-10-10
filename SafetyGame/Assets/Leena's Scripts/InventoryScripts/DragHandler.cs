@@ -37,8 +37,9 @@ public class DragHandler : MonoBehaviour, IDragHandler, IEndDragHandler
         {
             var hitDropSpot = hit.collider.GetComponent<IDropSpot>();
             var hitPlayerDropSpot = hit.collider.GetComponent<IPlayerDropSpot>();
+            var hitLadderSpot = hit.collider.GetComponent<LadderDrop>();
 
-            if (hitDropSpot != null || hitPlayerDropSpot != null)
+            if (hitDropSpot != null || hitPlayerDropSpot != null || hitLadderSpot != null)
             {
                 image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
             }

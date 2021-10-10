@@ -19,7 +19,7 @@ public class PlayerCollection : MonoBehaviour
 
     public void CollectItem()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 3f);
 
         foreach (var col in colliders)
         {            

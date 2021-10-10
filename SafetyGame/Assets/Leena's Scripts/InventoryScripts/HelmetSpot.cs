@@ -4,6 +4,7 @@ public class HelmetSpot : MonoBehaviour, IPlayerDropSpot
 {
     private SkinnedMeshRenderer mesh;
     private PlayerCollection player;
+
     public bool isPlaced { get; set; }
 
     private void Start()

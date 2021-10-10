@@ -13,9 +13,12 @@ public class GameControlScript : MonoBehaviour
     int minhealth = 0;
     int starthealth = 6;
 
-    public void Update()
-    {
+    [SerializeField] GameObject helmet;
+    private PlayerCollection player;
 
+    public void Start()
+    {
+        player = GetComponent<PlayerCollection>();
     }
 
     public void health(int x)
@@ -39,15 +42,24 @@ public class GameControlScript : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         idamage fallobj = collision.collider.GetComponent<idamage>();
+
         if (fallobj != null)
         {
+            GameObject hitObject = collision.gameObject;
             int damage = fallobj.getdamage();
-            fallobj.destroy();
-            // if (bool helmeton = true)
-            // (health(0);
-            //else
-            // health(damage)
-            health(damage);
+            hitObject.transform.position = hitObject.transform.position + transform.right * 7 * Time.deltaTime;
+
+            if (player.helmetCollected)
+            {
+                health(0);
+                player.helmetCollected = false;
+            }
+
+            else
+            {
+                health(damage);
+                player.helmetCollected = false;
+            }
         }
     }
 }

@@ -340,10 +340,10 @@ TextureImporter:
       name: ToolSprites1_7
       rect:
         serializedVersion: 2
-        x: 94
-        y: 1119
-        width: 611
-        height: 550
+        x: 238
+        y: 1141
+        width: 496
+        height: 665
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,7 +450,7 @@ TextureImporter:
         width: 268
         height: 265
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

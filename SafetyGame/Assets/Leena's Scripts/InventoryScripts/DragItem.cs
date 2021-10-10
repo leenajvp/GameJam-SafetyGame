@@ -1,28 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DragItem : MonoBehaviour
 {
-    private Vector3 mOffset;
-    private float mZCoord;
+    private Vector3 mouseOffset;
+    private float camZDistance;
 
-
-    private void OnMouseDown()
+    void OnMouseDown()
     {
-        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-        mOffset = gameObject.transform.position - GetMouseWorldPos();
+        camZDistance = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+        mouseOffset = gameObject.transform.position - MouseWorldPoint();
     }
 
-    private Vector3 GetMouseWorldPos()
+    private Vector3 MouseWorldPoint()
+
     {
         Vector3 mousePoint = Input.mousePosition;
-        mousePoint.z = mZCoord;
-        return Camera.main.ScreenToViewportPoint(mousePoint);
+        mousePoint.z = camZDistance;
+        return Camera.main.ScreenToWorldPoint(mousePoint);
     }
 
     private void OnMouseDrag()
     {
-        transform.position = GetMouseWorldPos() + mOffset;
+        transform.position = MouseWorldPoint() + mouseOffset;
     }
 }
+

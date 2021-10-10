@@ -16,13 +16,14 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     Sprite axe;
     public List<GameObject> objectToSpawn = new List<GameObject>();
-
+    private bool spawned = false;
 
     public bool isRandomized;
     // Start is called before the first frame update
     void Start()
     {
         img.enabled = false;
+        spawned = false;
     }
     // Update is called once per frame
     void Update()
@@ -33,9 +34,10 @@ public class Spawner : MonoBehaviour
     {
         int index = isRandomized ? Random.Range(0, objectToSpawn.Count) : 0;
 
-        if (objectToSpawn.Count > 0)
+        if (objectToSpawn.Count > 0 && spawned == false)
         {
-            Instantiate(objectToSpawn[index], transform.position, Quaternion.identity); 
+            Instantiate(objectToSpawn[index], transform.position, Quaternion.identity);
+            spawned = true;
         }
         if (objectToSpawn[index].name == "hammer")
         {
@@ -59,14 +61,4 @@ public class Spawner : MonoBehaviour
 
         img.enabled = false;
     }
-
-    
-    
-    
-
-
-
-
-
-
 }
