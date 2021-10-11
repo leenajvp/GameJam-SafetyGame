@@ -8,6 +8,7 @@ public class Respawn : MonoBehaviour
     
     [SerializeField] private Transform player;
     [SerializeField] private Transform respawnpoint;
+    private Spawner[] spawner;
 
 
 
@@ -24,6 +25,15 @@ public class Respawn : MonoBehaviour
 
         
        
+    }
+
+    private void ResetGame()
+    {
+        // Triggers to set false
+        //collectables
+        //pushObjects reset
+        
+        
     }
 
 

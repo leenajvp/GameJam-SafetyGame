@@ -22,7 +22,7 @@ public class move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //transform.position = startPos.transform.position;
+       // transform.position = startPos.transform.position;
         animState = GetComponent<Animator>();
     }
 
@@ -38,7 +38,10 @@ public class move : MonoBehaviour
             if (i.name == "walk plane")
                 num += 1;
             if (i.name == "Wood")
+            {
                 num += 1;
+            }
+                
             if (i.name == "Ladder")
             {
                 num += 1;
@@ -62,7 +65,7 @@ public class move : MonoBehaviour
             {
                 speed = topspeed;
             }
-            transform.position = transform.position + -transform.up * speed * Time.deltaTime; //falling
+            transform.position = transform.position + -transform.up * speed * Time.deltaTime; //falling            
             animState.SetInteger("AnimState", 1);
         }
         else
@@ -77,7 +80,7 @@ public class move : MonoBehaviour
 
                 if (col.name == "PushObject")
                 {
-                    transform.position = transform.position + transform.right * 3;
+                    transform.position = transform.position + transform.right * 5;
                     Debug.Log("push");
                 }
 

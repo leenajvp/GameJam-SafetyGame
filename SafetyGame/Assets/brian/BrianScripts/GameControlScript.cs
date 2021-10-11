@@ -47,7 +47,7 @@ public class GameControlScript : MonoBehaviour
         {
             GameObject hitObject = collision.gameObject;
             int damage = fallobj.getdamage();
-            hitObject.transform.position = hitObject.transform.position + transform.right * 7 * Time.deltaTime;
+            hitObject.transform.position = hitObject.transform.position + transform.right * 4;
 
             if (player.helmetCollected)
             {

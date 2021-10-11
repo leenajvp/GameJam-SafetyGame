@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     Sprite axe;
     public List<GameObject> objectToSpawn = new List<GameObject>();
-    private bool spawned = false;
+    public bool spawned = false;
 
     public bool isRandomized;
     // Start is called before the first frame update
