@@ -14,15 +14,11 @@ public class move : MonoBehaviour
     [SerializeField]
     float rotspeed = 60.0f;
 
-    [SerializeField]
-    Transform startPos;
-
     private Animator animState;
 
     // Start is called before the first frame update
     void Start()
     {
-       // transform.position = startPos.transform.position;
         animState = GetComponent<Animator>();
     }
 
