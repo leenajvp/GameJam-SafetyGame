@@ -21,12 +21,9 @@ public class Respawn : MonoBehaviour
         if (other.name == "Player")
             player.transform.position = respawnpoint.transform.position;
         
-        
-
-        
-       
     }
 
+    
     private void ResetGame()
     {
         // Triggers to set false

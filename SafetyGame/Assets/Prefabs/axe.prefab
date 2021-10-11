@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7944689482401978890}
   - component: {fileID: 4287765013915472018}
   - component: {fileID: 7045506047369115155}
+  - component: {fileID: 9077897880320455448}
   m_Layer: 0
   m_Name: axe
   m_TagString: object
@@ -141,3 +142,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: -2
   image: {fileID: 0}
+--- !u!114 &9077897880320455448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2488452976887374801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059841bc4d1d28342b6d711d28029f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dam: -2

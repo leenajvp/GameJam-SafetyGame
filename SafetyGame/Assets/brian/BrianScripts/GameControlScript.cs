@@ -19,6 +19,8 @@ public class GameControlScript : MonoBehaviour
     public void Start()
     {
         player = GetComponent<PlayerCollection>();
+
+        
     }
 
     public void health(int x)
@@ -37,7 +39,15 @@ public class GameControlScript : MonoBehaviour
             }
             else
                 hearts[i].sprite = emptyheart;
+
+
+            if (starthealth <= 0)
+            {
+                Time.timeScale = 0f;
+            }
         }
+
+       
     }
     public void OnCollisionEnter(Collision collision)
     {
