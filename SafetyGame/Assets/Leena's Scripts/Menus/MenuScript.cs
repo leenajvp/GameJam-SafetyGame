@@ -53,6 +53,12 @@ public class MenuScript : MonoBehaviour
         CreditsMenu.SetActive(false);
     }
 
+    public void BackToGame()
+    {
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
+
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);
@@ -60,7 +66,6 @@ public class MenuScript : MonoBehaviour
 
     public void StartGame()
     {
-        PlayerPrefs.SetInt("SpawnPoint", 0);
         SceneManager.LoadScene(1);
     }
 
