@@ -51,7 +51,7 @@ public class Spawner : MonoBehaviour
         {
             img.sprite = axe;
         }
-
+        img.enabled = true;
         StartCoroutine(TurnOffImage());
     }
 

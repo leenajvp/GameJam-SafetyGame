@@ -66,11 +66,17 @@ public class MenuScript : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerPrefs.SetInt("SpawnPoint", 0);
         SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void PlayerDead()
+    {
+        SceneManager.LoadScene(1);
     }
 }

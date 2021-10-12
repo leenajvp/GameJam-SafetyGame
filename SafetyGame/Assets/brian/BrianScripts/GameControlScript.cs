@@ -15,12 +15,21 @@ public class GameControlScript : MonoBehaviour
 
     [SerializeField] GameObject helmet;
     private PlayerCollection player;
+    private MenuScript gd;
 
     public void Start()
     {
         player = GetComponent<PlayerCollection>();
-
+        gd = FindObjectOfType<MenuScript>();
         
+    }
+
+    private void Update()
+    {
+        if (starthealth == 0)
+        {
+            gd.PlayerDead();
+        }
     }
 
     public void health(int x)
@@ -59,7 +68,7 @@ public class GameControlScript : MonoBehaviour
             int damage = fallobj.getdamage();
             hitObject.transform.position = hitObject.transform.position + transform.right * 4;
 
-            if (player.helmetCollected)
+            if (player.helmetCollected == true)
             {
                 health(0);
                 player.helmetCollected = false;
@@ -70,6 +79,17 @@ public class GameControlScript : MonoBehaviour
                 health(damage);
                 player.helmetCollected = false;
             }
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        idamage fallTrigger = other.GetComponent<idamage>();
+        int damage = fallTrigger.getdamage();
+
+        if (fallTrigger != null)
+        {
+            health(damage);
         }
     }
 }
