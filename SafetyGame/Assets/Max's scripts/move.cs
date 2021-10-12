@@ -17,12 +17,14 @@ public class move : MonoBehaviour
     [SerializeField]
     Transform startPos;
 
+    [SerializeField] 
+    GameObject goalMenu;
     private Animator animState;
 
     // Start is called before the first frame update
     void Start()
     {
-       // transform.position = startPos.transform.position;
+        goalMenu.SetActive(false);
         animState = GetComponent<Animator>();
     }
 
@@ -74,8 +76,10 @@ public class move : MonoBehaviour
             {
                 if (col.name == "Goal")
                 {
+                    Debug.Log("goal");
                     charspeed = 0;
                     animState.SetInteger("AnimState", 3);
+                    goalMenu.SetActive(true);
                 }
                 if (col.name == "Wood")
                 {

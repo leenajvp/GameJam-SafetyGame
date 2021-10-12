@@ -933,8 +933,28 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Programmers:\nLeena Jarvenpaa\nMax \n\n3D artist:\nStephanie\n\nSupporting
-    Programmer and 3D artist:\nBrian\n\n2D artist:\nLeena Jarvenpaa"
+  m_Text: 'Programmers:
+
+    Leena Jarvenpaa
+
+    Max Hegarty
+
+
+    3D artist:
+
+    Stephanie
+    Lopez Cuaican
+
+
+    Supporting Programmer and 3D artist:
+
+    Brian Rodriguez
+    Argote
+
+
+    2D artist:
+
+    Leena Jarvenpaa'
 --- !u!222 &1135537399
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1486,7 +1506,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c0682cab69ae18d40acb0320a56c8f46, type: 3}
-    m_FontSize: 46
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1502,13 +1522,14 @@ MonoBehaviour:
 
     Game Design:
 
-    Brian
+    Brian Rodriguez Argote
 
     Leena Jarvenpaa
 
     Max
+    Hegarty
 
-    Stephanie
+    Stephanie Lopez Cuaican
 
 '
 --- !u!222 &1889053826
