@@ -85,10 +85,11 @@ public class GameControlScript : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         idamage fallTrigger = other.GetComponent<idamage>();
-        int damage = fallTrigger.getdamage();
+        //int damage = fallTrigger.getdamage();
 
         if (fallTrigger != null)
         {
+            int damage = fallTrigger.getdamage();
             health(damage);
         }
     }

@@ -77,6 +77,13 @@ public class move : MonoBehaviour
                     charspeed = 0;
                     animState.SetInteger("AnimState", 3);
                 }
+                if (col.name == "Wood")
+                {
+                    if (transform.rotation.eulerAngles.x != col.transform.rotation.eulerAngles.x)
+                    {
+                        transform.Rotate((col.transform.rotation.eulerAngles.x - transform.rotation.eulerAngles.x), 0, 0);
+                    }
+                }
 
                 if (col.name == "PushObject")
                 {
