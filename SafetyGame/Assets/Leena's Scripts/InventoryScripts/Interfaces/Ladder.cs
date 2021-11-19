@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ladder : Collectable
+public class Ladder : CollectableBase
 {
     public override void Drop()
     {

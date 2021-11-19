@@ -11,10 +11,10 @@ public interface ICollectable
 
 public class InventoryEventArgs : EventArgs
 {
-    public InventoryEventArgs(ICollectable item)
-    {
-        Item = item;
-    }
-
     public ICollectable Item;
+
+    public InventoryEventArgs(ICollectable collectedItem)
+    {
+        Item = collectedItem;
+    }
 }
