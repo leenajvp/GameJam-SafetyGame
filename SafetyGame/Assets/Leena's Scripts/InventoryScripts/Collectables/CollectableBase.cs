@@ -2,8 +2,10 @@
 
 public class CollectableBase : MonoBehaviour, ICollectable
 {
+    [SerializeField]
+    private CollectableData itemData;
     public virtual bool isAvailable { get; set; }
-    public Sprite image = null;
+    private Sprite image = null;
     public Sprite Image
     {
         get
@@ -15,6 +17,8 @@ public class CollectableBase : MonoBehaviour, ICollectable
     public virtual void Start()
     {
         isAvailable = true;
+        gameObject.name = itemData.name;
+        image = itemData.image;
     }
 
     public virtual void Collect()

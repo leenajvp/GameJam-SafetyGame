@@ -2,16 +2,27 @@
 
 public class Helmet : CollectableBase
 {
-    public override bool isAvailable { get; set; }
-
-    private PlayerCollection player;
-    private HelmetSpot helmet;
+    [SerializeField]
+    private PlayerCollection playerChar = null;
+    [SerializeField]
+    private HelmetSpot helmetOnPlayer = null;
 
     public override void Start()
     {
+        if (playerChar == null)
+        {
+            try { playerChar = FindObjectOfType<PlayerCollection>(); }
+            catch { Debug.LogError("Player is null"); }
+        }
+
+        if (helmetOnPlayer == null)
+        {
+            try { helmetOnPlayer = FindObjectOfType<HelmetSpot>(); }
+            catch { Debug.LogError("Helmet on player is null"); }
+        }
+
+        base.Start();
         isAvailable = true;
-        player = FindObjectOfType<PlayerCollection>();
-        helmet = FindObjectOfType<HelmetSpot>();
     }
 
     public override void Drop()
@@ -25,12 +36,12 @@ public class Helmet : CollectableBase
         {
             var hitDropSpot = hit.collider.GetComponent<IPlayerDropSpot>();
 
-            if (player.helmetCollected == false)
+            if (playerChar.helmetCollected == false)
             {
-                if (hitDropSpot != null && player.helmetCollected == false)
+                if (hitDropSpot != null && playerChar.helmetCollected == false)
                 {
-                    helmet.isPlaced = true;
-                    player.helmetCollected = true;
+                    helmetOnPlayer.isPlaced = true;
+                    playerChar.helmetCollected = true;
                     Destroy(gameObject);
                 }
 

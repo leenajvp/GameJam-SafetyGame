@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class Bucket : CollectableBase
 {
-    public override bool isAvailable { get; set; }
-
-    private PlayerCollection player;
-    private BucketSpot bucket;
+    [SerializeField]
+    private PlayerCollection playerChar;
+    [SerializeField]
+    private BucketSpot bucketOnPlayer;
 
     public override void Start()
     {
+        base.Start();
         isAvailable = true;
-        player = FindObjectOfType<PlayerCollection>();
-        bucket = FindObjectOfType<BucketSpot>();
+
+        if (playerChar == null)
+        {
+            try { playerChar = FindObjectOfType<PlayerCollection>(); }
+            catch { Debug.LogError("Player is null"); }
+        }
+
+        if (bucketOnPlayer == null)
+        {
+            try { bucketOnPlayer = FindObjectOfType<BucketSpot>(); }
+            catch { Debug.LogError("Bucket on player is null"); }
+        }
     }
 
     public override void Drop()
@@ -27,12 +38,12 @@ public class Bucket : CollectableBase
         {
             var hitDropSpot = hit.collider.GetComponent<IPlayerDropSpot>();
 
-            if (player.helmetCollected == false)
+            if (playerChar.helmetCollected == false)
             {
-                if (hitDropSpot != null && player.helmetCollected == false)
+                if (hitDropSpot != null && playerChar.helmetCollected == false)
                 {
-                    player.helmetCollected = true;
-                    bucket.isPlaced = true;
+                    playerChar.helmetCollected = true;
+                    bucketOnPlayer.isPlaced = true;
                     Destroy(gameObject);
                 }
 
