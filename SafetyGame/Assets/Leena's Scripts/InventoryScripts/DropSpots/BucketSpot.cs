@@ -15,19 +15,19 @@ public class BucketSpot : MonoBehaviour, IPlayerDropSpot
 
     private void Update()
     {
-        if (player.helmetCollected == false)
-        {
-            isPlaced = false;
-        }
+        //if (player.helmetCollected == false)
+        //{
+        //    isPlaced = false;
+        //}
 
-        if (isPlaced == true)
-        {
-            mesh.enabled = true;
-        }
+        //if (isPlaced == true)
+        //{
+        //    mesh.enabled = true;
+        //}
 
-        else
-        {
-            mesh.enabled = false;
-        }
+        //else
+        //{
+        //    mesh.enabled = false;
+        //}
     }
 }

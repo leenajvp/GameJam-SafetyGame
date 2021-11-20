@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IDropSpot 
 {
-
+ //Marker interfcae
 }

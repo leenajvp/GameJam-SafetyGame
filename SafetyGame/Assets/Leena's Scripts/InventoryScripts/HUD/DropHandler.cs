@@ -7,7 +7,11 @@ public class DropHandler : MonoBehaviour, IDropHandler
 
     private void Awake()
     {
-        inventory = FindObjectOfType<Inventory>();
+        if (inventory == null)
+        {
+            try { inventory = FindObjectOfType<Inventory>(); }
+            catch { Debug.LogError("Inventory script in drophandler cannot be null"); }
+        }
     }
 
     public void OnDrop(PointerEventData eventData)

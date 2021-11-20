@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5334048857ebfd44c962794dba608de1, type: 3}
   m_Name: HardHat
   m_EditorClassIdentifier: 
-  name: HardHat
+  name: Helmet
   image: {fileID: 5825846447505380196, guid: 0ea561b8a94111c4892c06c539ae4c3c, type: 3}

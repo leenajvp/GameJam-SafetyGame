@@ -17,7 +17,6 @@ public class CheckPoint: MonoBehaviour
         if (PlayerPrefs.GetInt("SpawnPoint") == 0)
         {
             player.transform.position = startPosObj.transform.position;
-            Debug.Log("newgame");
         }
 
         if (PlayerPrefs.GetInt("SpawnPoint") == checkPointNumber)
@@ -31,7 +30,6 @@ public class CheckPoint: MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             PlayerPrefs.SetInt("SpawnPoint", checkPointNumber);
-            Debug.Log("check" + PlayerPrefs.GetInt("SpawnPoint"));
         }
     }
 }

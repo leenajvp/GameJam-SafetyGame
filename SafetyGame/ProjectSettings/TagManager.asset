@@ -7,6 +7,7 @@ TagManager:
   - object
   - health
   - floor
+  - HatPlacement
   layers:
   - Default
   - TransparentFX
