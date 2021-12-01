@@ -15,11 +15,19 @@ D:/Uni/FinalYear/GameDev/CompletedSafetyGame/GameJam-SafetyGame/SafetyGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 62393
 Successfully changed project path to: D:/Uni/FinalYear/GameDev/CompletedSafetyGame/GameJam-SafetyGame/SafetyGame
 D:/Uni/FinalYear/GameDev/CompletedSafetyGame/GameJam-SafetyGame/SafetyGame
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 29.66 ms, found 2 plugins.
+=======
+61768
+Successfully changed project path to: D:/Uni/FinalYear/GameDev/CompletedSafetyGame/GameJam-SafetyGame/SafetyGame
+D:/Uni/FinalYear/GameDev/CompletedSafetyGame/GameJam-SafetyGame/SafetyGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 32.17 ms, found 2 plugins.
+>>>>>>> Leena
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.19f1 (68f137dc9bbe)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -35,6 +43,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -48,11 +57,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (2261ms)
 		BeginReloadAssembly (60ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002659 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 31.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.394 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2394ms)
+		BeginReloadAssembly (66ms)
+>>>>>>> Leena
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (304ms)
 			LoadAssemblies (58ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -67,12 +92,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (11ms)
 				ProcessInitializeOnLoadAttributes (60ms)
 				ProcessInitializeOnLoadMethodAttributes (21ms)
+=======
+		EndReloadAssembly (345ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (117ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (140ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (32ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (68ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+>>>>>>> Leena
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.003040 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -83,10 +125,23 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (766ms)
 		BeginReloadAssembly (122ms)
+=======
+Registered in 0.003744 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.859 seconds
+Domain Reload Profiling:
+	ReloadAssembly (860ms)
+		BeginReloadAssembly (131ms)
+>>>>>>> Leena
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (16ms)
 		EndReloadAssembly (596ms)
 			LoadAssemblies (83ms)
@@ -106,18 +161,47 @@ Domain Reload Profiling:
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
+=======
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (677ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (272ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+>>>>>>> Leena
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+=======
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+>>>>>>> Leena
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 96.0 MB.
 System memory in use after: 96.0 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2279.
+<<<<<<< HEAD
 Total: 2.713500 ms (FindLiveObjects: 0.182600 ms CreateObjectMapping: 0.037500 ms MarkObjects: 2.399900 ms  DeleteObjects: 0.092800 ms)
+=======
+Total: 2.774000 ms (FindLiveObjects: 0.180000 ms CreateObjectMapping: 0.073300 ms MarkObjects: 2.424900 ms  DeleteObjects: 0.095100 ms)
+>>>>>>> Leena
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,6 +216,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/Leena's Scripts/Sprites/AlertSign.psd
   artifactKey: Guid(858d8069bb3649346b7f592f0e4d23b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Leena's Scripts/Sprites/AlertSign.psd using Guid(858d8069bb3649346b7f592f0e4d23b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd278d90b4b7de08dabc62330b0dd01') in 0.108869 seconds 
@@ -353,10 +438,137 @@ Received Import Request.
   artifactKey: Guid(a0519077fd116274493e95df976349ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/piano.prefab using Guid(a0519077fd116274493e95df976349ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b472ea746478715cd3b5c7e5907ec4f') in 0.021502 seconds 
   Import took 0.024643 seconds .
+=======
+  path: Assets/Stephanie/axe.fbx
+  artifactKey: Guid(a998293eca2889c4e945bb60371e1ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/axe.fbx using Guid(a998293eca2889c4e945bb60371e1ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970aa75369b1039e657ee4d00a074200') in 0.116770 seconds 
+  Import took 0.119704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Stephanie/Bucket.fbx
+  artifactKey: Guid(b59ef4c832b90a44081335e159417226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/Bucket.fbx using Guid(b59ef4c832b90a44081335e159417226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7523425551b84b35f926bf09af8ddf29') in 0.042736 seconds 
+  Import took 0.045524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Stephanie/cane3.fbx
+  artifactKey: Guid(3f21c7d646100db4da91697ac44a38a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/cane3.fbx using Guid(3f21c7d646100db4da91697ac44a38a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3f2b634ccb1b376e253275cb996ac6') in 0.039764 seconds 
+  Import took 0.042602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.201384 seconds.
+  path: Assets/Stephanie/car.fbx
+  artifactKey: Guid(390bd320affbacd44b1269ab49336401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/car.fbx using Guid(390bd320affbacd44b1269ab49336401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d5b19362d18f91f878283ff886a372') in 0.023927 seconds 
+  Import took 0.027001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Stephanie/containersgroup.fbx
+  artifactKey: Guid(8ef8638761896ca42902877834b2858f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/containersgroup.fbx using Guid(8ef8638761896ca42902877834b2858f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced2c8acc16f0df278b50a1eca214758') in 0.057492 seconds 
+  Import took 0.060701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Stephanie/heart0.fbx
+  artifactKey: Guid(0d1be01c2659a134b84082e1023ebf4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/heart0.fbx using Guid(0d1be01c2659a134b84082e1023ebf4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db1eef8b3ef9640c7fef0cc420fc23b') in 0.022158 seconds 
+  Import took 0.025333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Stephanie/containerred.fbx
+  artifactKey: Guid(cee73b28060111b41af83f0b326b374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/containerred.fbx using Guid(cee73b28060111b41af83f0b326b374f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528a1bfefe198c096f5fe995af429db2') in 0.024872 seconds 
+  Import took 0.027645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Stephanie/ground.fbx
+  artifactKey: Guid(dde3297a006a1bc43a66c1a492ed0bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/ground.fbx using Guid(dde3297a006a1bc43a66c1a492ed0bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8492f7b9017bdbb52eab48b33330575c') in 0.036412 seconds 
+  Import took 0.039714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Stephanie/house2.fbx
+  artifactKey: Guid(0b75d2547b85d6740a2ddbfa19c41a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/house2.fbx using Guid(0b75d2547b85d6740a2ddbfa19c41a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29bc027ec6c51a9db3f7f0a9999a92e') in 0.020836 seconds 
+  Import took 0.023859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Stephanie/HELMET.fbx
+  artifactKey: Guid(29bbebf0d8bdcf54c8507a22ba58e035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/HELMET.fbx using Guid(29bbebf0d8bdcf54c8507a22ba58e035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f64a0ebffe6f8ca4baab10deb809fe0') in 0.024238 seconds 
+  Import took 0.027236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Stephanie/house1.fbx
+  artifactKey: Guid(255d2942ea80c6148b96d460574955f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/house1.fbx using Guid(255d2942ea80c6148b96d460574955f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8683186831c0a2f564d160714221397') in 0.019774 seconds 
+  Import took 0.022675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Stephanie/piano2.fbx
+  artifactKey: Guid(b22e60fc175e5dd4da3a784b9f924e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/piano2.fbx using Guid(b22e60fc175e5dd4da3a784b9f924e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a1b5389ddf5644f9598c2167c13768c') in 0.091331 seconds 
+  Import took 0.094435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Stephanie/ladder.fbx
+  artifactKey: Guid(3695869cb77b468408ddbddb00efa5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/ladder.fbx using Guid(3695869cb77b468408ddbddb00efa5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357cd72a9d2c21103e4900974579b6d2') in 0.023206 seconds 
+  Import took 0.026179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Stephanie/house3.fbx
+  artifactKey: Guid(3749e238a4f2aa7428ada101180bca2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/house3.fbx using Guid(3749e238a4f2aa7428ada101180bca2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8573090da043aa3e627d7023e591f103') in 0.019128 seconds 
+  Import took 0.022151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Stephanie/thumbnail_menu composition.png
+  artifactKey: Guid(e487ab6de27a69b4880c596f170f8762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/thumbnail_menu composition.png using Guid(e487ab6de27a69b4880c596f170f8762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c61b9e703f7a5335aca018ad4cb4ab9') in 0.040677 seconds 
+  Import took 0.043631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Stephanie/ladder3.fbx
+  artifactKey: Guid(d4dcbe71b2bc3b04fb948d4b85cfc2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/ladder3.fbx using Guid(d4dcbe71b2bc3b04fb948d4b85cfc2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c289184ab0b2e3e85ad9767ab0693c') in 0.041027 seconds 
+  Import took 0.043688 seconds .
+>>>>>>> Leena
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000200 seconds.
+<<<<<<< HEAD
   path: Assets/Prefabs/barrel.prefab
   artifactKey: Guid(5602c22e3c1051140a702f8e324677b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/barrel.prefab using Guid(5602c22e3c1051140a702f8e324677b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbed0a4952197422ad87dfdbadbd3472') in 0.023159 seconds 
@@ -505,5 +717,107 @@ Received Import Request.
   artifactKey: Guid(915c2780cc637714fa72f60d75d76d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Leena's Scripts/Sprites using Guid(915c2780cc637714fa72f60d75d76d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c87a01f6f47e23d3a1ad1fb9ab8cf3') in 0.007206 seconds 
   Import took 0.009922 seconds .
+=======
+  path: Assets/Stephanie/ground1.fbx
+  artifactKey: Guid(f32a4877152722644a1b05eaab74b22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/ground1.fbx using Guid(f32a4877152722644a1b05eaab74b22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3056344574f7fba7931b654f3f7fa25d') in 0.025075 seconds 
+  Import took 0.027938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Stephanie/car2.fbx
+  artifactKey: Guid(ead97da8010d58e499cdc7575be24c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/car2.fbx using Guid(ead97da8010d58e499cdc7575be24c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f934b582acec3fa973fe0c51c0230b') in 0.022871 seconds 
+  Import took 0.025877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Stephanie/heart.fbx
+  artifactKey: Guid(1843933d691913f4da73c652075f9ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/heart.fbx using Guid(1843933d691913f4da73c652075f9ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a48cc884a94543ddc6d373cf70da7c5') in 0.022998 seconds 
+  Import took 0.025668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Stephanie/tree.fbx
+  artifactKey: Guid(411306c0bd7fdd64999238dbaad8b86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/tree.fbx using Guid(411306c0bd7fdd64999238dbaad8b86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd72c4dd8a8859efd9cd155d058936a') in 0.028706 seconds 
+  Import took 0.031262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Stephanie/containers2.fbx
+  artifactKey: Guid(059fe09fc6fe2b4439c346d07fc61fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/containers2.fbx using Guid(059fe09fc6fe2b4439c346d07fc61fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70e0e4dc5205ce39698115ccee6cc24') in 0.023633 seconds 
+  Import took 0.026399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Stephanie/LITTLEGUY.fbx
+  artifactKey: Guid(84562f9b8868bfa49979817518659732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/LITTLEGUY.fbx using Guid(84562f9b8868bfa49979817518659732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55ccdf678c249a2c471b1ae4dd2e17f') in 0.023248 seconds 
+  Import took 0.025962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Stephanie/mountainew.fbx
+  artifactKey: Guid(b290e575c5822af43bff569dc905470d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/mountainew.fbx using Guid(b290e575c5822af43bff569dc905470d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7557eb6b5afb24ac773aebca51bbc1') in 0.023336 seconds 
+  Import took 0.026085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Stephanie/littleguyTpose.fbx
+  artifactKey: Guid(3a55be137e3829c469569d00a130c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stephanie/littleguyTpose.fbx using Guid(3a55be137e3829c469569d00a130c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36072a1ec597014033a08fdb162ca85b') in 0.077152 seconds 
+  Import took 0.080090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.978967 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(09f434ee0b5041a43b50557c61670124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(09f434ee0b5041a43b50557c61670124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5e69b1a297bfa30e885ec6d363d4a8') in 0.006608 seconds 
+  Import took 0.009369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.628160 seconds.
+  path: Assets/Scenes/Level1 1.unity
+  artifactKey: Guid(c0455e4b784fed048afa67b95ac067c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1 1.unity using Guid(c0455e4b784fed048afa67b95ac067c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77328ccf6f08a16b14caf47f5fdeebc7') in 0.006470 seconds 
+  Import took 0.009365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.423026 seconds.
+  path: Assets/Scenes/Level1 2.unity
+  artifactKey: Guid(a31e185186121ea4f976b1d95163d82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1 2.unity using Guid(a31e185186121ea4f976b1d95163d82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1effbef3a3a1f05743f8476be7ec8e46') in 0.007296 seconds 
+  Import took 0.010293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.844034 seconds.
+  path: Assets/Scenes/LeenaCopy.unity
+  artifactKey: Guid(a31e185186121ea4f976b1d95163d82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/LeenaCopy.unity using Guid(a31e185186121ea4f976b1d95163d82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b738e9c777a9f412ad3acbb985f4e5fb') in 0.007047 seconds 
+  Import took 0.010043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.155051 seconds.
+  path: Assets/Scenes/MaxCopy.unity
+  artifactKey: Guid(c0455e4b784fed048afa67b95ac067c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MaxCopy.unity using Guid(c0455e4b784fed048afa67b95ac067c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179adac1d06ee822b165a25c87dcda00') in 0.006425 seconds 
+  Import took 0.009392 seconds .
+>>>>>>> Leena
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
