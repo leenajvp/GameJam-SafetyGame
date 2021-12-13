@@ -16,12 +16,12 @@ public class CheckPoint: MonoBehaviour
 
         if (PlayerPrefs.GetInt("SpawnPoint") == 0)
         {
-            player.transform.position = startPosObj.transform.position;
+            //player.transform.position = startPosObj.transform.position;
         }
 
         if (PlayerPrefs.GetInt("SpawnPoint") == checkPointNumber)
         {
-            player.transform.position = transform.position;
+            //LastCheckPoint();
         }
     }
 
@@ -31,6 +31,11 @@ public class CheckPoint: MonoBehaviour
         {
             PlayerPrefs.SetInt("SpawnPoint", checkPointNumber);
         }
+    }
+
+    public void LastCheckPoint()
+    {
+        player.transform.position = transform.position;
     }
 }
 

@@ -7,12 +7,18 @@ public class move : MonoBehaviour
     [SerializeField]
     float topspeed = 5.0f;
     [SerializeField]
-    float charspeed = 5.0f;
+    float charspeed = 4.0f;
     [SerializeField]
     float acceleration = 2.0f;
     float speed;
     [SerializeField]
     float rotspeed = 60.0f;
+
+    //Leena adding the speed increase :)
+    [SerializeField]
+    float accelerationSpeed = 0.3f;
+    [SerializeField]
+    float maxSpeed = 10.0f;
 
     [SerializeField]
     Transform startPos;
@@ -26,6 +32,7 @@ public class move : MonoBehaviour
     {
         goalMenu.SetActive(false);
         animState = GetComponent<Animator>();
+        speed = charspeed;
     }
 
     // Update is called once per frame
@@ -57,8 +64,15 @@ public class move : MonoBehaviour
         }
         else
         {
+            charspeed += accelerationSpeed * Time.deltaTime;
+
             transform.position = transform.position + transform.forward * charspeed * Time.deltaTime; //walking
             animState.SetInteger("AnimState", 0);
+
+            if(charspeed >= maxSpeed)
+            {
+                charspeed = maxSpeed;
+            }
         }
         if (num == 0)
         {
@@ -76,11 +90,17 @@ public class move : MonoBehaviour
             {
                 if (col.name == "Goal")
                 {
-                    Debug.Log("goal");
                     charspeed = 0;
                     animState.SetInteger("AnimState", 3);
                     goalMenu.SetActive(true);
                 }
+
+                if (col.name == "Slip")
+                {
+                    charspeed = 0;
+                    animState.SetInteger("AnimState", 4);
+                }
+
                 if (col.name == "Wood")
                 {
                     if (transform.rotation.eulerAngles.x != col.transform.rotation.eulerAngles.x)

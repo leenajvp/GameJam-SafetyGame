@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,19 +10,25 @@ public class GameControlScript : MonoBehaviour
     public Sprite fullheart;
     public Sprite emptyheart;
 
+    [SerializeField]
+    private GameObject gameOverMenu;
+
     int maxhealth = 6;
     int minhealth = 0;
     int starthealth = 6;
 
-    [SerializeField] GameObject helmet;
+    [SerializeField] 
+    GameObject helmet;
     private PlayerCollection player;
     private MenuScript gd;
+
+    private Animator animState;
 
     public void Start()
     {
         player = GetComponent<PlayerCollection>();
         gd = FindObjectOfType<MenuScript>();
-        
+        animState = GetComponent<Animator>();
     }
 
     private void Update()
@@ -29,6 +36,11 @@ public class GameControlScript : MonoBehaviour
         if (starthealth == 0)
         {
             gd.PlayerDead();
+        }
+
+        if (animState.GetInteger("AnimState") == 4)
+        {
+            gameOverMenu.SetActive(true);
         }
     }
 
@@ -85,7 +97,6 @@ public class GameControlScript : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         idamage fallTrigger = other.GetComponent<idamage>();
-        //int damage = fallTrigger.getdamage();
 
         if (fallTrigger != null)
         {
