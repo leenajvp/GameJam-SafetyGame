@@ -16,12 +16,12 @@ public class CheckPoint: MonoBehaviour
 
         if (PlayerPrefs.GetInt("SpawnPoint") == 0)
         {
-            //player.transform.position = startPosObj.transform.position;
+            player.transform.position = startPosObj.transform.position;
         }
 
         if (PlayerPrefs.GetInt("SpawnPoint") == checkPointNumber)
         {
-            //LastCheckPoint();
+            LastCheckPoint();
         }
     }
 
