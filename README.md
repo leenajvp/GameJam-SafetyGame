@@ -24,3 +24,4 @@ Brian Rodrigues Argote (Programmer and Modeller) https://github.com/BrianRodrigu
 
 Animations are sourced from Mixamo.
 
+https://user-images.githubusercontent.com/58009594/146649368-83d0864d-c249-4d2e-8850-8e51eaacc964.mp4
