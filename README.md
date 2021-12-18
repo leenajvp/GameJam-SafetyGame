@@ -4,8 +4,8 @@ Safety themed prototype game created for a University Game Jam.
 Participates in the project were:
 
 Leena Jarvenpaa (Programmer) https://github.com/leenajvp
-- UI design and programming
-- Drag and Drop inventory
+- Drag and Drop Inventory 
+- UI
 - Check Point system
 - 2D Art
 
